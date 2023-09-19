@@ -9,10 +9,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "banner-bg": "url('../public/Pic/Banner.jpeg')",  
+        "banner-bg": "url('../public/Pic/Banner.jpeg')",
+        "banner1-bg": "url('../public/Pic/Banner1.jpg')",
       },
     },
   },
   plugins: [],
 };
-

@@ -1,0 +1,129 @@
+.container {
+  max-width: 124rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+.Select{
+  margin-right: 900px;
+  color: #2A2A2A;
+text-align: center;
+font-size: 44px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 44px */
+letter-spacing: 2.2px;
+text-transform: capitalize;
+}
+.heading {
+    font-size: 33px;
+    border-top: solid 1px black;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    top: 50%;
+    z-index: 1; 
+}
+h4 {
+  color: #2F86A6;
+  font-size: 33px;
+  display: flex;
+  align-items: center; /* Vertically center the text and lines */
+  margin-left: -1200px; /* Adjust the margin as needed to move text to the left */
+}
+
+h4:before,
+h4:after {
+  content: "";
+  flex-grow: 1;
+  border-bottom: 3px solid #C4C4C4;
+}
+
+/* Optionally, you can adjust margin for spacing between text and lines */
+h4 span {
+  margin-right: 0px; /* Adjust the margin as needed */
+}
+
+.advert {
+  text-align: center; /* Center-align the inner divs horizontally */
+  height: 453px;
+}
+
+.left-advert,
+.right-advert {
+  display: inline-block; /* Display both divs on the same horizontal line */
+  vertical-align: middle; /* Vertically align both divs in the middle */
+  margin: 0 10px; /* Add spacing between the divs (adjust the value as needed) */
+  position: relative; /* Position them relative to their original position */
+  top: 40px; /* Adjust the vertical position (adjust the value as needed) */
+}
+
+.left-advert{
+  width: 616px;
+  height: 365px;
+  background-color: rgb(255, 0, 0);
+}
+.right-advert{
+  width: 616px;
+  height: 365px;
+  background-color: rgb(13, 255, 0);
+}
+
+.swiper_container {
+  margin-left: 500px;
+  height: 52rem;
+  padding: 2rem 0;
+}
+
+.swiper-slide {
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+}
+
+p{
+  margin-left: 175px;
+}
+
+ .swiper-slide img {
+  width: 30rem;
+  height: 27rem;
+  border-radius: 2rem;
+  object-fit:c;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+
+
+.swiper-pagination {
+  margin-bottom: -13px;
+  bottom: 1rem;
+}
+
+ .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+} 
+
+.container-slider{
+  height: 552px;
+} 
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #FF0000; /* Replace with your desired color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
