@@ -29,7 +29,7 @@ export default function Attraction() {
       </div>
 
       <br/>
-      <h1 className='Select'>Select Catagories</h1>
+      <h1 className='Select'>Select Categories</h1>
       
       
       <div className="flex justify-center">
