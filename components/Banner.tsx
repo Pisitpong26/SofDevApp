@@ -19,7 +19,7 @@ const Banner = () => {
         <h1 className="text-2xl md:text-4xl uppercase font-bold">
             TAK
         </h1>
-        <p className="text-base md:text-lg font-semibold mt-2 text-center">
+        <p className="text-base md:text-lg font-semibold mt-2">
             {text} <Cursor cursorBlinking cursorStyle="|" cursorColor="#ffaa17" />
         </p>
     </div>

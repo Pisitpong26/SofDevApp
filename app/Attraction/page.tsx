@@ -136,8 +136,8 @@ export default function Attraction() {
         slidesPerView={'auto'}
         coverflowEffect={{
           rotate: 0,
-          stretch: 440,
-          depth: 100,
+          stretch: 400,
+          depth: 0,
           modifier: 2.5,
           slideShadows: true,
         }}
