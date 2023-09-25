@@ -69,14 +69,14 @@ h4 span {
 }
 
 .swiper_container {
-  margin-left: 500px;
+  margin-left: 600px;
   height: 52rem;
   padding: 2rem 0;
 }
 
 .swiper-slide {
-  width: 37rem;
-  height: 42rem;
+  /* width: 37rem;
+  height: 42rem; */
   position: relative;
 }
 
@@ -85,9 +85,9 @@ p{
 }
 
  .swiper-slide img {
-  width: 30rem;
-  height: 27rem;
-  border-radius: 2rem;
+  /* width: 30rem;
+  height: 27rem; */
+  /* border-radius: 2rem; */
   object-fit:c;
 }
 
@@ -111,7 +111,7 @@ p{
   height: 552px;
 } 
 .swiper-pagination .swiper-pagination-bullet {
-  background-color: #FF0000; /* Replace with your desired color */
+  background-color: #f17d10; /* Replace with your desired color */
 }
 
 

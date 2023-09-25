@@ -1,3 +1,4 @@
+"use client" 
 import Banner from "@/components/Banner";
 import Catagory from "@/components/Catagory";
 import Navbar from "@/components/Navbar";
@@ -8,6 +9,17 @@ import { BiSolidMessageRoundedError } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 
+import '@/app/slider.css'
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+// import '@ionic/react/css/core.css';
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
 export default function Home() {
   return (
@@ -72,6 +84,56 @@ export default function Home() {
             <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] mx-2"/>
             <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] rotate-180 fill-cyan-700 mx-2"/>
           </div>
+      </div>
+
+      <div className="h-[400px] ml-28  flex flex-row justify-center items-center">
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 420,
+          depth: 0,
+          modifier: 2.5,
+        }}
+        // pagination={true}
+        modules={[EffectCoverflow]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/2.png" width={400} height={300} alt="Picture of the author"/>
+        </div>
+        </SwiperSlide>
+          
+        <SwiperSlide>
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+           <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/3.png" width={400} height={300} alt="Picture of the author"/> 
+           </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+           <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/4.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/5.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+        
+      </Swiper>
       </div>
     </main> 
   )
