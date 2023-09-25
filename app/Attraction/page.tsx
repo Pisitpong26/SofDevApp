@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 "use client" 
 import '@/app/slider.css'
 /* eslint-disable @next/next/no-img-element */
