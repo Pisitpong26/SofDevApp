@@ -13,7 +13,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import Banner from "@/components/Banner";
 import Navbar from "@/components/Navbar";
-
+import Link from 'next/link';
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
@@ -33,8 +33,8 @@ export default function Attraction() {
       
       
       <div className="flex justify-center">
-      <a
-        href=""
+      <Link
+        href="/About"
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         target="_blank"
         rel="noopener noreferrer"
@@ -46,7 +46,7 @@ export default function Attraction() {
           className="w-24 h-24 mx-auto border-2 border-[#2F86A6] rounded-lg p-4"
         />
         <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>ธรรมชาติ</p>
-      </a>
+      </Link>
 
 
 
@@ -115,12 +115,12 @@ export default function Attraction() {
       </div>
 
 
-      <div className='advert'>
+      <div className='advert flex flex-row justify-center'>
           <div className='left-advert'>
-            {/* Left content */}
+            {<Image className="rounded-[20px] w-full h-full" src="/Ads/ads1.png" width={300} height={450} alt="Picture of the author"/>}
           </div>
           <div className='right-advert'>
-            {/* Right content */}
+            {<Image className="rounded-[20px] w-full h-full" src="/Ads/ads2.png" width={300} height={450} alt="Picture of the author"/>}
           </div>
       </div>
 
@@ -244,7 +244,7 @@ export default function Attraction() {
       </Swiper>
       </div>
       <div className="container-slider">
-      <h4><span>ค่าเฟ่</span></h4>
+      <h4><span>คาเฟ่</span></h4>
       <br/>
       <Swiper
         effect={'coverflow'}
