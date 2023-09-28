@@ -50,7 +50,7 @@ export default function Login(){
                                 </div>
                             </form>
                                     <p className="text-center text-white text-xs">
-                                        by TravelerTale Developer Team
+                                        TravelerTale Developer Team, made with ❤️
                                     </p>
                             </div>
                             
