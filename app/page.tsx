@@ -18,9 +18,9 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import '@ionic/react/css/core.css';
+// import '@ionic/react/css/core.css';
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
-import { IonIcon } from "@ionic/react";
+// import { IonIcon } from "@ionic/react";
 
 export default function Home() {
   return (
