@@ -13,10 +13,10 @@ export default function AttractionDetail(){
             </div>
             <div>
                 <AttractImage
-                 imgSrc1="../AttractDetail/bluecave/1.png"
-                 imgSrc2="../AttractDetail/bluecave/2.png"
-                 imgSrc3="../AttractDetail/bluecave/3.png"
-                 imgSrc4="../AttractDetail/bluecave/4.png"
+                 imgSrc1="../AttractDetail/thilosu/1.png"
+                 imgSrc2="../AttractDetail/thilosu/2.jpg"
+                 imgSrc3="../AttractDetail/thilosu/3.jpg"
+                 imgSrc4="../AttractDetail/thilosu/4.jpg"
                 ></AttractImage>
             </div>
             
