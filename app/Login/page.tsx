@@ -9,8 +9,8 @@ export default function Login(){
                     <div className="mt-20 flex flex-col items-center border-2 rounded-2xl backdrop-blur-sm w-[430px] h-[400px]">
                         <div className=" text-white text-3xl mt-10 font-bold ">Login</div>
                         <div className="w-full max-w-xs">
-                            <form className="mt-4 rounded px-3 pt-5 pb-8 mb-4">
-                                <div className="mb-4">
+                            <form className="mt-4 rounded px-3 pt-5 pb-2 mb-4">
+                                <div className="mb-3">
                                     <label className="block text-white text-sm font-bold mb-2">
                                         Username
                                     </label>
@@ -31,6 +31,12 @@ export default function Login(){
                                     Forgot Password?
                                 </a>
                                 </div>
+                                <div className="mt-3 flex items-center justify-center">
+                                    <a className="hover:scale-110 inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 text-white" href="#">
+                                    Don&apos;t have an account? Sign Up !
+                                    </a>
+                                </div>
+                                
                             </form>
                                     <p className="text-center text-white text-xs">
                                     Made with ❤️ by TravelerTale Developer Team
