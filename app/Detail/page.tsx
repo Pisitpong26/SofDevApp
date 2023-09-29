@@ -21,7 +21,7 @@ export default function AttractionDetail(){
             </div>
 
             <div className="mt-10 text-black text-justify px-40 text-xl">
-             สร้างไว้เป็นหน้า Template เท่านั้น
+             สร้างไว้เป็นหน้า Template เท่านั้น ถ้าหน้านี้ยังขึ้นอยู่ แสดงว่ายังทำไม่เสร็จ
             </div>
 
             
