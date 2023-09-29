@@ -23,38 +23,48 @@ export default function About(){
 
         <div className='max-w-screen-2xl mx-auto flex flex-row justify-center items-center gap-8' >
             <div>
-                <AttractCard imgSrc="../Detail/waterfall.png" imgAlt="placeholder" text="น้ำตกทีลอซู"> </AttractCard>
+                <AttractCard imgSrc="../Detail/waterfall.png" imgAlt="placeholder" text="น้ำตกทีลอซู" path="/Detail/thilosu"> </AttractCard>
             </div>
             <div>
-                <AttractCard imgSrc="../Detail/bluecave.png" imgAlt="placeholder" text="ถ้ำสีฟ้า"> </AttractCard>
+                <AttractCard imgSrc="../Detail/bluecave.png" imgAlt="placeholder" text="ถ้ำสีฟ้า" path="/Detail/bluecave"> </AttractCard>
             </div>
             <div>
-                <AttractCard imgSrc="../Detail/somewhere.png" imgAlt="placeholder" text="ดอยมะม่วงสามหมื่น"> </AttractCard>
+                <AttractCard imgSrc="../Detail/somewhere.png" imgAlt="placeholder" text="ดอยมะม่วงสามหมื่น" path="/Detail"> </AttractCard>
             </div>
         </div>
         <div className='max-w-screen-2xl mx-auto flex flex-row justify-center items-center gap-8' >
             <div>
-                <AttractCard imgSrc="../Detail/Flower.png" imgAlt="placeholder" text="ม่อนหมอกตะวัน"> </AttractCard>
+                <AttractCard imgSrc="../Detail/Flower.png" imgAlt="placeholder" text="ม่อนหมอกตะวัน" path="/Detail"> </AttractCard>
             </div>
             <div>
-                <AttractCard imgSrc="../Detail/waterfall2.png" imgAlt="placeholder" text="น้ำตกลานสาง"> </AttractCard>
+                <AttractCard imgSrc="../Detail/waterfall2.png" imgAlt="placeholder" text="น้ำตกลานสาง" path="/Detail"> </AttractCard>
             </div>
             <div>
-                <AttractCard imgSrc="../Detail/mountain.png" imgAlt="placeholder" text="ม่อนคลุยหลวง ดอยทูเล"> </AttractCard>
+                <AttractCard imgSrc="../Detail/mountain.png" imgAlt="placeholder" text="ม่อนคลุยหลวง ดอยทูเล" path="/Detail"> </AttractCard>
             </div>
         </div>
         <div className='max-w-screen-2xl mx-auto flex flex-row justify-center items-center gap-8' >
             <div>
-                <AttractCard imgSrc="../Detail/waterfall.png" imgAlt="placeholder" text="น้ำตก"> </AttractCard>
+                <AttractCard imgSrc="../Detail/khunpawor.png" imgAlt="placeholder" text="อุทยานแห่งชาติขุนพะวอ" path="/Detail"> </AttractCard>
             </div>
             <div>
-                <AttractCard imgSrc="../Detail/bluecave.png" imgAlt="placeholder" text="ถ้ำสีฟ้า"> </AttractCard>
+                <AttractCard imgSrc="../Detail/literallyHotWater.png" imgAlt="placeholder" text="บ่อน้ำพุร้อนแม่กาษา" path="/Detail"> </AttractCard>
             </div>
             <div>
-                <AttractCard imgSrc="../Detail/somewhere.png" imgAlt="placeholder" text="ดอยมะม่วงสามหมื่น"> </AttractCard>
+                <AttractCard imgSrc="../Detail/AnotherWaterfall.png" imgAlt="placeholder" text="น้ำตกแม่ระเมิง" path="/Detail"> </AttractCard>
             </div>
         </div>
-        
+        <div className='max-w-screen-2xl mx-auto flex flex-row justify-center items-center gap-8' >
+            <div>
+                <AttractCard imgSrc="../Detail/doi.png" imgAlt="placeholder" text="ดอยหัวหมด" path="/Detail"> </AttractCard>
+            </div>
+            <div>
+                <AttractCard imgSrc="../Detail/greenMoutain.png" imgAlt="placeholder" text="อุ้มผาง" path="/Detail"> </AttractCard>
+            </div>
+            <div>
+                <AttractCard imgSrc="../Detail/charoenRiver.png" imgAlt="placeholder" text="น้ำตกพาเจริญ" path="/Detail"> </AttractCard>
+            </div>
+        </div>
         
 
         </main>

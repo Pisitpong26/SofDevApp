@@ -2,6 +2,7 @@ import React from 'react'
 import { BsBasket } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import Link from 'next/link';
+import Login from '@/app/Login/page';
 
 const Navbar = () => {
   return <div className="w-full h-20 lg:h-28 text-white opacity-100">
@@ -18,7 +19,7 @@ const Navbar = () => {
           <BsBasket className="text-xl hover:text-hoverColor"/>
           <h1>|</h1>
           <button className="w-[107px] h-[48px] bg-blue-500 text-white uppercase text-sm font-semibold rounded-3xl hover:bg-darkRed hover:text-black duration-300">
-            Login
+          <Link href="/Login">Login</Link>
           </button>
         </div>
         <div className="inline-flex lg:hidden">
