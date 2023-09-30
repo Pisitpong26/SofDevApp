@@ -45,17 +45,12 @@ h4 span {
 
 .advert {
   text-align: center; /* Center-align the inner divs horizontally */
-  height: 453px;
+  height: 375px;
 }
-
+/* 
 .left-advert,
 .right-advert {
-  display: inline-block; /* Display both divs on the same horizontal line */
-  vertical-align: middle; /* Vertically align both divs in the middle */
-  margin: 0 10px; /* Add spacing between the divs (adjust the value as needed) */
-  position: relative; /* Position them relative to their original position */
-  top: 40px; /* Adjust the vertical position (adjust the value as needed) */
-}
+} */
 
 .left-advert{
   width: 616px;
@@ -106,7 +101,7 @@ h4 span {
 } 
 
 .container-slider{
-  height: 552px;
+  height: 450px;
 } 
 .swiper-pagination .swiper-pagination-bullet {
    background-color: #f17d10; 
