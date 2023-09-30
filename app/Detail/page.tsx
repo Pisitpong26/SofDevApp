@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
-
+import Rating from "@/components/RatingReview";
 
 export default function AttractionDetail(){
     return(
@@ -24,7 +24,13 @@ export default function AttractionDetail(){
              สร้างไว้เป็นหน้า Template เท่านั้น ถ้าหน้านี้ยังขึ้นอยู่ แสดงว่ายังทำไม่เสร็จ
             </div>
 
-            
+            <Rating
+                five={20}
+                four={15}
+                three={3}
+                two={5}
+                one={20}
+            ></Rating>
 
 
         </main>

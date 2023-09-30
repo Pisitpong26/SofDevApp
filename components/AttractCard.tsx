@@ -23,5 +23,3 @@ export const AttractCard: React.FC<AttractCard> = ({ imgSrc, imgAlt, text, path 
 };
 
 export default AttractCard;
-
-// <img src={imgSrc} alt={imgAlt} className="max-w-md h-auto mb-4 rounded-t-2xl " />
