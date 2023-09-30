@@ -11,7 +11,7 @@ interface AttractImage {
 }
 
 const AttractImage: React.FC<AttractImage> = ({imgSrc1,imgSrc2,imgSrc3,imgSrc4}) => {
-  const [path, setPath] = useState<string>(imgSrc1); // Set your initial image path here
+  const [path, setPath] = useState<string>(imgSrc1);
   
   const handleImageClick = (newImagePath: string) => {
     setPath(newImagePath);
