@@ -29,8 +29,8 @@ export default function AttractionDetail(){
             <Rating
                 five={15}
                 four={5}
-                three={4}
-                two={3}
+                three={20}
+                two={14}
                 one={1}
             ></Rating>
              
