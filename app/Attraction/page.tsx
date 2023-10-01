@@ -36,7 +36,6 @@ export default function Attraction() {
       <Link
         href="/About"
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
@@ -56,7 +55,7 @@ export default function Attraction() {
       <Link
         href=""
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
+
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
@@ -71,7 +70,7 @@ export default function Attraction() {
   <Link
         href=""
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
+       
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
@@ -86,7 +85,7 @@ export default function Attraction() {
   <Link
         href=""
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
+       
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
@@ -101,7 +100,7 @@ export default function Attraction() {
   <Link
         href=""
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
+     
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
