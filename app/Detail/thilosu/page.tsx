@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
-
+import ReviewCard from "@/components/ReviewCard"
 
 export default function AttractionDetail(){
     return(
@@ -26,13 +26,33 @@ export default function AttractionDetail(){
             </div>
 
             <Rating
-                five={6}
-                four={3}
+                five={15}
+                four={4}
                 three={2}
-                two={0}
-                one={0}
+                two={1}
+                one={1}
             ></Rating>
 
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-10 justify-center gap-[40px]"> 
+                <ReviewCard
+                    username="บะหมี่แห้ง"
+                    star={2}
+                    content="น้ำเยอะเกิน"
+                
+                ></ReviewCard>
+                <ReviewCard
+                    username="Marmalade"
+                    star={5}
+                    content="สวยมากค่า พนง. ใจดีบริการเป็นกันเองสุด ๆ ค่าเข้าไม่แพง ที่จอดรถเยอะ ให้ห้าดาวเลยค่า"
+                
+                ></ReviewCard>
+                <ReviewCard
+                    username="น้าอู๊ด"
+                    star={1}
+                    content="งงเลย ไปถึงหน้าประตูทางเข้าแล้ว ประตูติดป้ายว่าเลื่อน ไม่รู้ต้องมาวันไหน"
+                
+                ></ReviewCard>
+            </div>
 
 
         </main>

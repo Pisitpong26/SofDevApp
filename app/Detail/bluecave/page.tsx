@@ -2,9 +2,15 @@
 import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
+import ReviewCard from "@/components/ReviewCard"
 
+interface AttractionDetail {
+    
+    star:number;
+}
 
-export default function AttractionDetail(){
+export default function AttractionDetail({}){
+
     return(
         
         <main>
@@ -27,14 +33,33 @@ export default function AttractionDetail(){
 
 
             <Rating
-                five={15}
-                four={5}
+                five={23}
+                four={11}
                 three={20}
                 two={14}
                 one={1}
             ></Rating>
              
-            
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-10 justify-center gap-[40px]"> 
+                <ReviewCard
+                    username="16sakuraa"
+                    star={4}
+                    content="ผมลองมาเล่นบอลตามพี่คนนี้ดู แกคัดบอลแม่นดี พาบอลเต็ง บอลสเต็ปแตกบ่อยมากครับ #กำไรเต็มคาราเบล ผมเองก็ตามแกมาสักพัก #มีแจกแนวทางหน้าเฟสฟรีทุกวัน ลองกดติดตามดู"
+                
+                ></ReviewCard>
+                <ReviewCard
+                    username="เกิดมาเพื่อเกรียน"
+                    star={1}
+                    content="กากกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกก"
+                
+                ></ReviewCard>
+                <ReviewCard
+                    username="Apple"
+                    star={5}
+                    content="ถ้ำสวยมาก มีที่ให้ถ่ายรูปเยอะเลย รีบไปตอนคนยังไม่เยอะนะ เพราะที่จอดรถน้อย  "
+                
+                ></ReviewCard>
+            </div>
 
 
         </main>
