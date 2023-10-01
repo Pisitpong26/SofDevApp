@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
+import Rating from "@/components/RatingReview";
 
 
 export default function AttractionDetail(){
@@ -23,6 +24,17 @@ export default function AttractionDetail(){
             <div className="mt-10 text-black text-justify px-40 text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
+
+
+            <Rating
+                five={15}
+                four={5}
+                three={20}
+                two={14}
+                one={1}
+            ></Rating>
+             
+            
 
 
         </main>

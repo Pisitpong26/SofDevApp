@@ -36,7 +36,6 @@ export default function Attraction() {
       <Link
         href="/About"
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
@@ -45,7 +44,7 @@ export default function Attraction() {
           alt="Nature"
           className="w-24 h-24 mx-auto border-2 border-[#2F86A6] rounded-lg p-4"
         />
-        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>ธรรมชาติ</p>
+        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>NATURE</p>
       </Link>
 
 
@@ -53,10 +52,10 @@ export default function Attraction() {
 
 
 
-      <a
+      <Link
         href=""
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
+
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
@@ -65,13 +64,13 @@ export default function Attraction() {
       alt="History"
       className="w-24 h-24 mx-auto border-2 border-[#2F86A6] rounded-lg p-4"
         />
-        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>ประวัติศาสตร์</p>
-  </a>
+        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>HISTORY</p>
+  </Link>
 
-  <a
+  <Link
         href=""
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
+       
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
@@ -80,13 +79,13 @@ export default function Attraction() {
       alt="Activity"
       className="w-24 h-24 mx-auto border-2 border-[#2F86A6] rounded-lg p-4"
         />
-        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>กิจกรรม</p>
-  </a>
+        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>ACTIVITY</p>
+  </Link>
 
-  <a
+  <Link
         href=""
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
+       
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
@@ -95,13 +94,13 @@ export default function Attraction() {
       alt="Cafe"
       className="w-24 h-24 mx-auto border-2 border-[#2F86A6] rounded-lg p-4"
         />
-        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>คาเฟ่</p>
-  </a>
+        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>CAFE</p>
+  </Link>
 
-  <a
+  <Link
         href=""
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
+     
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
       >
@@ -110,17 +109,17 @@ export default function Attraction() {
       alt="Else"
       className="w-24 h-24 mx-auto border-2 border-[#2F86A6] rounded-lg p-4"
         />
-        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>อื่นๆ</p>
-  </a>
+        <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>OTHER</p>
+  </Link>
       </div>
 
 
-      <div className='advert flex flex-row justify-center'>
+      <div className='advert flex flex-row justify-center mt-8'>
           <div className='left-advert'>
-            {<Image className="rounded-[20px] w-full h-full" src="/Ads/ads1.png" width={300} height={450} alt="Picture of the author"/>}
+            {<Image className="rounded-[20px] w-full h-4/5" src="/Ads/ads1.png" width={300} height={450} alt="Picture of the author"/>}
           </div>
           <div className='right-advert'>
-            {<Image className="rounded-[20px] w-full h-full" src="/Ads/ads2.png" width={300} height={450} alt="Picture of the author"/>}
+            {<Image className="rounded-[20px] w-full h-4/5" src="/Ads/ads2.png" width={300} height={450} alt="Picture of the author"/>}
           </div>
       </div>
 
@@ -148,21 +147,21 @@ export default function Attraction() {
         className="mySwiper justify-center items-center"
       >
         <SwiperSlide>
-          <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
+          <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
         
         </SwiperSlide>
         <SwiperSlide>
-          <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/2.png" width={300} height={450} alt="Picture of the author"/>
+          <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/2.png" width={300} height={450} alt="Picture of the author"/>
         
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/3.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/3.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/4.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/4.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/5.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/5.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper>
       </div>
@@ -189,19 +188,19 @@ export default function Attraction() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/6.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/6.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/7.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/7.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/8.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/8.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/9.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/9.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/10.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/10.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper>
       </div>
@@ -227,19 +226,19 @@ export default function Attraction() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/11.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/11.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/12.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/12.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/13.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/13.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/14.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/14.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/15.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/15.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper>
       </div>
@@ -265,19 +264,19 @@ export default function Attraction() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/16.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/16.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/17.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/17.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/18.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/18.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/19.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/19.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/20.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/20.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper>
       </div>
@@ -303,19 +302,19 @@ export default function Attraction() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/21.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/21.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/22.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/22.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/23.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/23.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/24.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/24.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[475px] h-[400px]" src="/PicSlider/25.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[400px] h-[325px]" src="/PicSlider/25.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper>
       </div>
