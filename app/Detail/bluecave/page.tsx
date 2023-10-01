@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
-import { FaHive } from "react-icons/fa6";
+
 
 export default function AttractionDetail(){
     return(
