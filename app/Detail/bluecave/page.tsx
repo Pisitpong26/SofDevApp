@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
 import ReviewCard from "@/components/ReviewCard"
+import HotelCard from "@/components/HotelCard";
 
 interface AttractionDetail {
     
@@ -61,7 +62,45 @@ export default function AttractionDetail({}){
                 ></ReviewCard>
             </div>
 
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-2 justify-center gap-[30px]"> 
+                <HotelCard
+                    hotelname="Hotel California"
+                    image="../Hotel/Hotelcalifornia.jpg"
+                    star={4}
+                    rating={100}
+                    price="9,999"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="16sakuraa"
+                    image="../Hotel/catshark.png"
+                    star={4}
+                    rating={100}
+                    price="9,999"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="Cat"
+                    image="../Hotel/catshark.png"
+                    star={4}
+                    rating={100}
+                    price="9,999"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="Cat"
+                    image="../Hotel/catshark.png"
+                    star={4}
+                    rating={100}
+                    price="9,999"
+                ></HotelCard>
+
+            </div>
+
 
         </main>
     )
 }
+
+
+{/* <div className="mt-3 w-[50px] h-[33px] bg-yellow-300 rounded-tl-md rounded-br-md font-bold text-2xl text-white text-center inset-y-0 right-4 absolute">
+                                4.0
+                            </div>
+                            <div cl */}

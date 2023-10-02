@@ -1,13 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
+"use client"; // This is a client component
 import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
 import ReviewCard from "@/components/ReviewCard";
+import map from "@/components/map";
+
+
+  
 
 export default function AttractionDetail(){
+
     return(
         
         <main>
+
             <div className="w-full bg-blue bg-opacity-100 text-black" ><Navbar /><h1></h1></div>
             <div className='mt-4 max-w-screen-2xl mx-auto flex flex-col justify-center items-center'>
                 <h2 className=" md:text-5xl uppercase font-bold mt-3 text-blue tracking-widest">template page only</h2>
@@ -89,6 +96,7 @@ export default function AttractionDetail(){
 
 
 
+            
         </main>
     )
 }
