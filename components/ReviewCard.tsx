@@ -10,7 +10,7 @@ interface ReviewCard {
 export const ReviewCard: React.FC<ReviewCard> = ({ username,star,content}) => {
   return (
     <div className="flex flex-col w-[370px] h-[170px] border-2 bg-white bg-opacity-90 rounded-lg shadow-md">
-                    <div className="flex flex-row pt-3 pl-5 font-bold">
+                    <div className="flex flex-row pt-3 pl-5 text-xl font-bold">
                         {username}
                     </div>
                     <div className="flex flex-row pl-[19px] pt-[5px] font-bold">
