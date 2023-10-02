@@ -5,7 +5,7 @@ import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
 import ReviewCard from "@/components/ReviewCard";
 import map from "@/components/map";
-
+import HotelCard from "@/components/HotelCard";
 
   
 
@@ -92,6 +92,38 @@ export default function AttractionDetail(){
                     อย่าได้คร้านการวิชา ."
                 
                 ></ReviewCard>
+            </div>
+
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-2 justify-center gap-[30px]"> 
+                <HotelCard
+                    hotelname="Hotel California"
+                    image="../Hotel/Hotelcalifornia.jpg"
+                    star={4}
+                    rating={100}
+                    price="2,699"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="16sakuraa"
+                    image="../Hotel/catshark.png"
+                    star={4}
+                    rating={100}
+                    price="9,999"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="ข้างถนน"
+                    image="../Hotel/street.jpg"
+                    star={2}
+                    rating={420}
+                    price="0"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="เต็นท์"
+                    image="../Hotel/tent.jpg"
+                    star={4}
+                    rating={100}
+                    price="1,499"
+                ></HotelCard>
+
             </div>
 
 

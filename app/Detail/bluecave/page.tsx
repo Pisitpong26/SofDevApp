@@ -68,7 +68,7 @@ export default function AttractionDetail({}){
                     image="../Hotel/Hotelcalifornia.jpg"
                     star={4}
                     rating={100}
-                    price="9,999"
+                    price="2,699"
                 ></HotelCard>
                 <HotelCard
                     hotelname="16sakuraa"
@@ -78,18 +78,18 @@ export default function AttractionDetail({}){
                     price="9,999"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="Cat"
-                    image="../Hotel/catshark.png"
-                    star={4}
-                    rating={100}
-                    price="9,999"
+                    hotelname="ข้างถนน"
+                    image="../Hotel/street.jpg"
+                    star={2}
+                    rating={420}
+                    price="0"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="Cat"
-                    image="../Hotel/catshark.png"
+                    hotelname="เต็นท์"
+                    image="../Hotel/tent.jpg"
                     star={4}
                     rating={100}
-                    price="9,999"
+                    price="1,499"
                 ></HotelCard>
 
             </div>

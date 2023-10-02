@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
 import ReviewCard from "@/components/ReviewCard"
+import HotelCard from "@/components/HotelCard";
 
 export default function AttractionDetail(){
     return(
@@ -35,9 +36,9 @@ export default function AttractionDetail(){
 
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-10 justify-center gap-[40px]"> 
                 <ReviewCard
-                    username="บะหมี่แห้ง"
-                    star={2}
-                    content="น้ำเยอะเกิน"
+                    username="วัยรุ่นเมกัน"
+                    star={4}
+                    content="โคตรสุดโคตรเอา"
                 
                 ></ReviewCard>
                 <ReviewCard
@@ -52,6 +53,38 @@ export default function AttractionDetail(){
                     content="งงเลย ไปถึงหน้าประตูทางเข้าแล้ว ประตูติดป้ายว่าเลื่อน ไม่รู้ต้องมาวันไหน"
                 
                 ></ReviewCard>
+            </div>
+
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-2 justify-center gap-[30px]"> 
+                <HotelCard
+                    hotelname="Hotel California"
+                    image="../Hotel/Hotelcalifornia.jpg"
+                    star={5}
+                    rating={69}
+                    price="2,699"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="16sakuraa"
+                    image="../Hotel/catshark.png"
+                    star={4}
+                    rating={100}
+                    price="9,999"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="ข้างถนน"
+                    image="../Hotel/street.jpg"
+                    star={2}
+                    rating={420}
+                    price="0"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="เต็นท์"
+                    image="../Hotel/tent.jpg"
+                    star={4}
+                    rating={100}
+                    price="1,499"
+                ></HotelCard>
+
             </div>
 
 
