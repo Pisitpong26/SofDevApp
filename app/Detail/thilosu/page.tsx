@@ -33,8 +33,12 @@ export default function AttractionDetail(){
                 two={1}
                 one={1}
             ></Rating>
-
-            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-10 justify-center gap-[40px]"> 
+            <div className="bg-gray-300 bg-opacity-30">
+                <div className="text-4xl font-bold text-blue w-full text-center ">
+                    Reviews
+                </div>
+            </div>
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[40px]"> 
                 <ReviewCard
                     username="วัยรุ่นเมกัน"
                     star={4}
@@ -55,7 +59,12 @@ export default function AttractionDetail(){
                 ></ReviewCard>
             </div>
 
-            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-2 justify-center gap-[30px]"> 
+            <div className="bg-gray-300 bg-opacity-30">
+                <div className="text-4xl font-bold text-blue w-full text-center ">
+                    Nearby Hotel
+                </div>
+            </div>
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
                 <HotelCard
                     hotelname="Hotel California"
                     image="../Hotel/Hotelcalifornia.jpg"

@@ -50,7 +50,8 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) 
 
 
   return (
-    <div className="flex flex-row mt-5 w-full h-[300px] bg-gray-300 bg-opacity-30 px-[180px] pt-1 justify-center">
+    <div className="flex  mt-5 w-full h-[300px] bg-gray-300 bg-opacity-30 px-[180px] pt-1 justify-center">
+        
                     <div className="flex flex-col w-1/3 mt-5 " id="reviewScore">
                         <div className="flex items-center mb-1">
                         <svg className="w-10 h-10 text-yellow-300 mr-1" aria-hidden="true"  fill="currentColor" viewBox="0 0 22 20">

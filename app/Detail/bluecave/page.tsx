@@ -32,7 +32,7 @@ export default function AttractionDetail({}){
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
 
-
+            
             <Rating
                 five={23}
                 four={11}
@@ -41,7 +41,12 @@ export default function AttractionDetail({}){
                 one={1}
             ></Rating>
              
-            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-10 justify-center gap-[40px]"> 
+             <div className="bg-gray-300 bg-opacity-30">
+                <div className="text-4xl font-bold text-blue w-full text-center ">
+                    Reviews
+                </div>
+            </div>
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[40px]"> 
                 <ReviewCard
                     username="16sakuraa"
                     star={4}
@@ -61,8 +66,12 @@ export default function AttractionDetail({}){
                 
                 ></ReviewCard>
             </div>
-
-            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-2 justify-center gap-[30px]"> 
+            <div className="bg-gray-300 bg-opacity-30">
+                <div className="text-4xl font-bold text-blue w-full text-center ">
+                    Nearby Hotel
+                </div>
+            </div>
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
                 <HotelCard
                     hotelname="Hotel California"
                     image="../Hotel/Hotelcalifornia.jpg"
