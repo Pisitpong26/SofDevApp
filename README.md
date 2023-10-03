@@ -34,7 +34,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details. -->
 
 
-##List of required npm command before compiling-
+## List of required npm command before compiling-
 
 ```bash
 npm install -D typescript
@@ -43,12 +43,12 @@ npm install swiper@10.3.0
 npm i @smastrom/react-rating
 ```
 
-##Run Command
+## Run Command
 ```bash
 npm run dev
 ```
 
-##Team Members
+## Team Members
 ```bash
 64010022 Krit Tangpinyoputtikhun
 64010403 Noparut Chantan
