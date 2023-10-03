@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+"use client"; // This is a client component
 import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
 import ReviewCard from "@/components/ReviewCard"
 import HotelCard from "@/components/HotelCard";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 export default function AttractionDetail(){
     return(
         
@@ -38,7 +40,7 @@ export default function AttractionDetail(){
                     Reviews
                 </div>
             </div>
-            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[40px]"> 
+            {/* <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[40px]"> 
                 <ReviewCard
                     username="วัยรุ่นเมกัน"
                     star={4}
@@ -57,11 +59,59 @@ export default function AttractionDetail(){
                     content="งงเลย ไปถึงหน้าประตูทางเข้าแล้ว ประตูติดป้ายว่าเลื่อน ไม่รู้ต้องมาวันไหน"
                 
                 ></ReviewCard>
+            </div> */}
+
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 "> 
+                <Swiper
+                    spaceBetween={10}
+                    slidesPerView={4}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                >
+                <SwiperSlide><ReviewCard
+                    username="วัยรุ่นเมกัน"
+                    star={5}
+                    content="โคตรสุดโคตรเอา"
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="Marmalade"
+                    star={5}
+                    content="สวยมากค่า พนง. ใจดีบริการเป็นกันเองสุด ๆ ค่าเข้าไม่แพง ที่จอดรถเยอะ ให้ห้าดาวเลยค่า"
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="น้าอู๊ด"
+                    star={1}
+                    content="งงเลย ไปถึงหน้าประตูทางเข้าแล้ว ประตูติดป้ายว่าเลื่อน ไม่รู้ต้องมาวันไหน"
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="มารายแครี่"
+                    star={4}
+                    content="ชอบบรรยากาศแห่งการได้ร่ำเมรัย ร่วมวงกับเพื่อนรู้ใจจะหาสุขใดไม่มีเปรียบปราน"
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="เซาะกราว"
+                    star={4}
+                    content="ดีแหละ"
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="โอ๊ต"
+                    star={3}
+                    content="โอ้ยคิดไม่ออกไม่รู้จะเขียนอะไร"
+                
+                ></ReviewCard></SwiperSlide>
+                
+                </Swiper>
+    
             </div>
 
             <div className="bg-gray-300 bg-opacity-30">
                 <div className="text-4xl font-bold text-blue w-full text-center ">
-                    Nearby Hotel
+                    Nearby Hotels
                 </div>
             </div>
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 

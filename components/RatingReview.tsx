@@ -22,6 +22,8 @@ interface RatingReview {
 
 }
 
+
+
 export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) => {
 
     const [rating, setRating] = useState(0)
@@ -46,7 +48,26 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) 
         itemShapes: RoundedStar,
         activeFillColor: '#FDE047',
         inactiveFillColor: '#fbf1a9'
+        
       }
+
+      function getRating(rating: any) {
+        switch (rating) {
+          case 1:
+            return 'Poor';
+          case 2:
+            return 'Nothing Special';
+          case 3:
+            return 'Average';
+          case 4:
+            return 'Extraordinary';
+          case 5:
+            return 'Amazing !';
+          default:
+            return 'None';
+        }
+      }
+      
 
 
   return (
@@ -101,14 +122,14 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) 
                     </div>
                     <div className="flex flex-col mt-5 items-center w-[400px] pl-[40px]">
                             <div className="flex flex-col text-left font-bold text-xl mt-[80px] ">
-                                ให้คะแนนและเขียนรีวิว
+                                ให้คะแนนและเขียนรีวิว 
                             </div>
                             <div className="flex flex-row mt-2">
                                 <Rating style={{ maxWidth: 250 }} value={rating} onChange={setRating} itemStyles={myStyles} />
                             </div>
+                            <div className="flex flex-row mt-2 font-bold text-2xl">{`${getRating(rating)}`}</div>
                             
                     </div>
-
                     <div className="flex flex-col  mt-5 px-[40px]">
                             <form>
                                 <div className="flex-row">
@@ -116,9 +137,6 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) 
                                         <textarea className="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-[370px] h-[200px] py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white" name="body" placeholder='เขียนรีวิวที่นี่...' required></textarea>
                                     </div>
                                 <div className="flex flex-col">
-                                    {/* <div className="flex pl-[20px]">
-                                        <p className="text-md font-bold">โปรดแสดงความคิดเห็นอย่างสุภาพ</p>
-                                    </div> */}
                                     <div className="flex pl-[250px]">
                                         <input type='submit' className="bg-white text-gray-700 font-medium py-1 px-4 border border-gray-400 rounded-lg tracking-wide mr-1 hover:bg-gray-100" value='Post Review'/>
                                     </div>
