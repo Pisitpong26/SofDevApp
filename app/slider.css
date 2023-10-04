@@ -42,24 +42,23 @@ h4:after {
 h4 span {
   margin-right: 0px; /* Adjust the margin as needed */
 }
-
+/* 
 .advert {
-  text-align: center; /* Center-align the inner divs horizontally */
-  height: 375px;
-}
+  height: 275px;
+} */
 /* 
 .left-advert,
 .right-advert {
 } */
 
-.left-advert{
+/* .left-advert{
   width: 616px;
   height: 365px;
 }
 .right-advert{
   width: 616px;
   height: 365px;
-}
+} */
 
 .swiper_container {
   margin-left: 600px;
@@ -101,7 +100,7 @@ h4 span {
 } 
 
 .container-slider{
-  height: 450px;
+  height: 350px;
 } 
 .swiper-pagination .swiper-pagination-bullet {
    background-color: #f17d10; 
