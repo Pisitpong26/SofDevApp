@@ -80,71 +80,71 @@ export default function Home() {
 
       {/*Attraction*/}
       <div className="slider-controler w-[1500px] h-[50px] flex flex-row justify-around my-12 items-center">
-              <h1 className="w-[500px] text-black font-bold text-left ml-10 text-2xl">ATTRACTRION</h1>
-                <div className="w-[500px] flex flex-row justify-end">
-                  <div className="next">
-                    <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] mx-2"/>
-                  </div>
-                  <div className="prev">
-                    <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] rotate-180 fill-cyan-700 mx-2"/>
-                  </div>
-                </div>
+        <h1 className="w-[500px] text-black font-bold text-left ml-10 text-2xl">ATTRACTRION</h1>
+          <div className="w-[500px] flex flex-row justify-end">
+            <div className="next">
+              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] mx-2"/>
             </div>
-
-            <div className="h-[400px] ml-32 flex flex-row justify-center items-center">
-            <Swiper
-              effect={'coverflow'}
-              grabCursor={true}
-              centeredSlides={true}
-              loop={true}
-              slidesPerView={'auto'}
-              coverflowEffect={{
-                rotate: 0,
-                stretch: 420,
-                depth: 0,
-                modifier: 2.5,
-              }}
-                navigation={{
-                nextEl: '.next',
-                prevEl: '.prev'
-              }}
-              modules={[EffectCoverflow, Navigation]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-                  <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-              <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-                  <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/2.png" width={400} height={300} alt="Picture of the author"/>
-              </div>
-              </SwiperSlide>
-                
-              <SwiperSlide>
-                <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-                <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/3.png" width={400} height={300} alt="Picture of the author"/> 
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-                <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/4.png" width={400} height={300} alt="Picture of the author"/> 
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide> 
-                <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-                  <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/5.png" width={400} height={300} alt="Picture of the author"/> 
-                </div>  
-              </SwiperSlide>
-              
-            </Swiper>
+            <div className="prev">
+              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] rotate-180 fill-cyan-700 mx-2"/>
             </div>
-            
-            <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  ">SEE ALL</h1>
+          </div>
+      </div>
+
+      <div className="h-[400px] ml-32 flex flex-row justify-center items-center">
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 420,
+          depth: 0,
+          modifier: 2.5,
+        }}
+          navigation={{
+          nextEl: '.next',
+          prevEl: '.prev'
+        }}
+        modules={[EffectCoverflow, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/2.png" width={400} height={300} alt="Picture of the author"/>
+        </div>
+        </SwiperSlide>
+          
+        <SwiperSlide>
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/3.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/4.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/5.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+        
+      </Swiper>
+      </div>
+      
+      <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  ">SEE ALL</h1>
 
       {/*Product*/}
       <div className="slider-controler w-[1500px] h-[50px] flex flex-row justify-around my-12 items-center">

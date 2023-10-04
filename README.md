@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -31,4 +31,40 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details. -->
+
+
+## List of required npm command before compiling
+
+```bash
+npm install -D typescript
+npm install react
+npm install swiper@10.3.0
+npm i @smastrom/react-rating
+```
+
+## Run Command
+```bash
+npm run dev
+```
+
+## Team Members
+```bash
+64010022 Krit Tangpinyoputtikhun
+64010403 Noparut Chantan
+64010522 Parita Nawaree
+64010546 Pacharapong Supha
+64010575 Phatcharaphon Kaewriporn
+64010609 Pisitpong Plongkerd
+64010815 Wiroon Somphaothong
+64010806 Withun Watcharakritwekhin
+64010860 Suppaphol Areewattanawong
+64011018 Artitaya Pimsupaporn
+at KMITL Computer Engineering
+```
+
+
+
+
+
+
