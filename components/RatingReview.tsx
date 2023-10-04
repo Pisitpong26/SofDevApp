@@ -69,14 +69,14 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,on
           case 5:
             return 'Amazing !';
           default:
-            return 'None';
+            return 'Tell us what you think';
         }
       }
       const [reviewContent, setReviewContent] = useState('');
 
     const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
-    
+
     if (rating === 0) {
       alert("Please select a rating before submitting your review.");
       return; 

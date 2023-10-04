@@ -34,7 +34,7 @@ export default function Attraction() {
       
       <div className="flex justify-center">
       <Link
-        href="/About"
+        href="/Nature"
         className="group  p-4 m-4 mx-20 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         rel="noopener noreferrer"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
