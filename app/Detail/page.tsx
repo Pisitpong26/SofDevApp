@@ -3,11 +3,13 @@
 import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
-import ReviewCard from "@/components/ReviewCard";
-import map from "@/components/map";
+import {ReviewCard} from "@/components/ReviewCard";
+// import map from "@/components/map";
 import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { useEffect, useState } from "react";
+
 
 interface Review {
     username: string;
@@ -21,17 +23,9 @@ interface Hotel {
     star: number;
     rating: number;
     price: string;
+    
 }
 
-const hotels: Hotel[] = [
-    {
-        hotelname: 'Cat Hotel',
-        image:'../Hotel/catshark.png',
-        star:4,
-        rating:4,
-        price:'1,699'
-    }
-];
 
 const reviews: Review[] = [
     {
@@ -62,7 +56,29 @@ const reviews: Review[] = [
    
   ];
 
+const hotels: Hotel[] = [
+    {
+        hotelname: 'Cat Hotel',
+        image:'../Hotel/catshark.png',
+        star:4,
+        rating:4,
+        price:'1,699'
+    }
+];
+
+
 export default function AttractionDetail({}){
+    // const [reviews, setReviews] = useState([
+    //     {
+    //       username: 'วัยรุ่นเมกัน',
+    //       star: 5,
+    //       content: 'โคตรสุดโคตรเอา',
+    //     },
+    //   ]);
+    //   const handleReviewSubmit = (newReview: { username: string; star: number; content: string; }) => {
+    //     console.log('New Review:', newReview);
+    //     setReviews([...reviews, newReview]);
+    //   };
 
     return(
         
@@ -91,6 +107,7 @@ export default function AttractionDetail({}){
                 three={3}
                 two={5}
                 one={20}
+                // onReviewSubmit={handleReviewSubmit}
             ></Rating>
             
             
@@ -153,9 +170,12 @@ export default function AttractionDetail({}){
 
             </div>
 
-
-
-            
         </main>
+
+        
     )
 }
+
+
+
+

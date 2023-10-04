@@ -12,6 +12,21 @@ interface AttractionDetail {
     star:number;
 }
 
+interface Review {
+    username: string;
+    star: number;
+    content: string;
+}
+
+const reviews: Review[] = [
+    {
+        username: 'วัยรุ่นเมกัน',
+        star: 5,
+        content: 'โคตรสุดโคตรเอา',
+    }
+];
+
+
 export default function AttractionDetail({}){
 
     return(

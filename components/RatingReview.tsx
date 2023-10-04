@@ -20,11 +20,16 @@ interface RatingReview {
     twoW: number;
     oneW: number;
 
+    onReviewSubmit: (review: Review) => void;
 }
 
+export interface Review {
+  username: string;
+  star: number;
+  content: string;
+}
 
-
-export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) => {
+export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,onReviewSubmit}) => {
 
     const [rating, setRating] = useState(0)
     const totalReview=five+four+three+two+one;
@@ -67,6 +72,26 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) 
             return 'None';
         }
       }
+      const [reviewContent, setReviewContent] = useState('');
+
+    const handleSubmit = (event: { preventDefault: () => void; }) => {
+    event.preventDefault();
+    
+    if (rating === 0) {
+      alert("Please select a rating before submitting your review.");
+      return; 
+    }
+
+    // Create a new review object
+    const newReview = {
+      username: 'Anonymous',
+      star: rating,
+      content: reviewContent,
+    };
+
+    
+    // onReviewSubmit(newReview);
+  };
       
 
 
@@ -130,20 +155,31 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) 
                             <div className="flex flex-row mt-2 font-bold text-2xl">{`${getRating(rating)}`}</div>
                             
                     </div>
-                    <div className="flex flex-col  mt-5 px-[40px]">
-                            <form>
-                                <div className="flex-row">
-                                    <div className="flex px-3 mb-2 mt-2 w-full">
-                                        <textarea className="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-[370px] h-[200px] py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white" name="body" placeholder='เขียนรีวิวที่นี่...' required></textarea>
-                                    </div>
-                                <div className="flex flex-col">
-                                    <div className="flex pl-[250px]">
-                                        <input type='submit' className="bg-white text-gray-700 font-medium py-1 px-4 border border-gray-400 rounded-lg tracking-wide mr-1 hover:bg-gray-100" value='Post Review'/>
-                                    </div>
-                                    </div>
-                                </div>
-                            </form>
-                            </div>
+                    <div className="flex flex-col mt-5 px-[40px]">
+      <form onSubmit={handleSubmit}>
+        <div className="flex-row">
+          <div className="flex px-3 mb-2 mt-2 w-full">
+            <textarea
+              className="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-[370px] h-[200px] py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"
+              name="body"
+              placeholder="เขียนรีวิวที่นี่..."
+              required
+              value={reviewContent}
+              onChange={(e) => setReviewContent(e.target.value)}
+            ></textarea>
+          </div>
+          <div className="flex flex-col">
+            <div className="flex pl-[250px]">
+              <input
+                type="submit"
+                className="bg-white text-gray-700 font-medium py-1 px-4 border border-gray-400 rounded-lg tracking-wide mr-1 hover:bg-gray-100"
+                value="Post Review"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
                     </div>
     
   );
