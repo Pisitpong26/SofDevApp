@@ -49,6 +49,10 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,on
     const twoP=((two/totalReview)*100).toFixed(0);
     const oneP=((one/totalReview)*100).toFixed(0);
 
+    const characterLimit = 200;
+    const [typedCharacter, setTypedCharacter] = useState(0);
+    
+
     const myStyles = {
         itemShapes: RoundedStar,
         activeFillColor: '#FDE047',
@@ -72,10 +76,24 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,on
             return 'Tell us what you think';
         }
       }
+
+      
       const [reviewContent, setReviewContent] = useState('');
 
     const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
+
+    const trimmedContent = reviewContent.trim();
+    if (trimmedContent.length === 0) {
+      alert("Review must contain non-empty text.");
+      return;
+    }
+
+    if (typedCharacter < 7)
+    {
+      alert("Review must contain at least 8 characters.");
+      return;
+    }
 
     if (rating === 0) {
       alert("Please select a rating before submitting your review.");
@@ -86,7 +104,7 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,on
     const newReview = {
       username: 'Anonymous',
       star: rating,
-      content: reviewContent,
+      content: trimmedContent,
     };
 
     
@@ -156,31 +174,38 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,on
                             
                     </div>
                     <div className="flex flex-col mt-5 px-[40px]">
-      <form onSubmit={handleSubmit}>
-        <div className="flex-row">
-          <div className="flex px-3 mb-2 mt-2 w-full">
-            <textarea
-              className="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-[370px] h-[200px] py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"
-              name="body"
-              placeholder="เขียนรีวิวที่นี่..."
-              required
-              value={reviewContent}
-              onChange={(e) => setReviewContent(e.target.value)}
-            ></textarea>
-          </div>
-          <div className="flex flex-col">
-            <div className="flex pl-[250px]">
-              <input
-                type="submit"
-                className="bg-white text-gray-700 font-medium py-1 px-4 border border-gray-400 rounded-lg tracking-wide mr-1 hover:bg-gray-100"
-                value="Post Review"
-              />
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-                    </div>
+                        <form onSubmit={handleSubmit}>
+                          <div className="flex-row">
+                            <div className="flex px-3 mb-2 mt-2 w-full">
+                              <textarea
+                                className="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-[370px] h-[200px] py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"
+                                name="body"
+                                placeholder="เขียนรีวิวที่นี่..."
+                                required
+                                value={reviewContent}
+                                onChange={(e) => {
+                                  if (e.target.value.length <= characterLimit) {
+                                    setReviewContent(e.target.value);
+                                    const string = (e.target.value).length;
+                                    setTypedCharacter(string);
+                                }}
+                              }
+                            ></textarea>
+                            </div>
+                            <div className="flex flex-col">
+                              <div className="text-right mr-6">{characterLimit-typedCharacter} characters left</div>
+                              <div className="flex pl-[250px]">
+                                <input
+                                  type="submit"
+                                  className="bg-white text-gray-700 font-medium py-1 px-4 border border-gray-400 rounded-lg tracking-wide mr-1 hover:bg-gray-100"
+                                  value="Post Review"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                </div>
     
   );
 };
