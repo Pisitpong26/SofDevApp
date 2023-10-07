@@ -14,7 +14,7 @@ export default function About(){
         </div>
 
 
-        <div className="flex flex-row w-full h-[400px] justify-center gap-6 mt-7">
+        <div className="flex flex-row w-full h-[400px] justify-center gap-6 mt-5">
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
                 <img src="/Member/1.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64010022</div>

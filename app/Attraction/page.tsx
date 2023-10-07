@@ -47,11 +47,6 @@ export default function Attraction() {
         <p className="text-[#2F86A6]" style={{ marginLeft: '0px' }}>NATURE</p>
       </Link>
 
-
-
-
-
-
       <Link
         href=""
         className="group  p-4 m-4 mx-12 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"

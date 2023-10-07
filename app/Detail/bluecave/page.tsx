@@ -7,6 +7,14 @@ import ReviewCard from "@/components/ReviewCard"
 import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import axios from "axios";
+
+const request = axios.create({
+  baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
+});
+
+
+
 interface AttractionDetail {
     
     star:number;
@@ -144,10 +152,7 @@ export default function AttractionDetail({}){
                     rating={100}
                     price="1,499"
                 ></HotelCard>
-
             </div>
-
-
         </main>
     )
 }

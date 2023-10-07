@@ -4,6 +4,21 @@ import React, { useState } from 'react';
 import { Rating, RoundedStar } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
+import axios from "axios";
+
+const request = axios.create({
+  baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
+});
+
+
+type AddAttractionReviewRequestBody = {attractionId: string; detail: string; rating: number; } 
+
+export const AddAttractionReview = (data: AddAttractionReviewRequestBody, authToken: string) =>
+  request.post("http://http://34.124.245.31/attraction/addReview", data, {
+    headers: {
+      Authorization: `${authToken}`, // Replace 'Bearer' with the appropriate authentication scheme if needed
+    },
+  });
 
 interface RatingReview {
 
@@ -19,8 +34,6 @@ interface RatingReview {
     threeW: number;
     twoW: number;
     oneW: number;
-
-    onReviewSubmit: (review: Review) => void;
 }
 
 export interface Review {
@@ -29,7 +42,7 @@ export interface Review {
   content: string;
 }
 
-export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,onReviewSubmit}) => {
+export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) => {
 
     const [rating, setRating] = useState(0)
     const totalReview=five+four+three+two+one;
@@ -101,15 +114,28 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,on
     }
 
     // Create a new review object
-    const newReview = {
-      username: 'Anonymous',
-      star: rating,
-      content: trimmedContent,
-    };
+    // const newReview = {
+    //   username: 'Anonymous',
+    //   star: rating,
+    //   content: trimmedContent,
+    // };
 
-    
-    // onReviewSubmit(newReview);
-  };
+    const authToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5MTc2NmI5OS1kOTI2LTRiZTgtYTYwMy00ZDFmYzBiNmVjMGIiLCJ1c2VybmFtZSI6InVzZXI1IiwiaWF0IjoxNjk2NjYyNDc5LCJleHAiOjE2OTY2Njk2Nzl9.uo57jsFWTerjRqf1ocvwVbfTl8HK6xo3yQUsRvPVbbc';
+    const newReview = {
+      attractionId: 'any',
+      detail: trimmedContent,
+      rating: rating,
+    }
+    AddAttractionReview(newReview, authToken)
+      .then((response) => {
+    // Handle the response
+          console.log('Review added successfully:', response.data);
+      })
+      .catch((error) => {
+    // Handle errors
+          console.error('Error adding review:', error);
+       });
+    };
       
 
 
@@ -186,7 +212,7 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,on
                                 onChange={(e) => {
                                   if (e.target.value.length <= characterLimit) {
                                     setReviewContent(e.target.value);
-                                    const string = (e.target.value).length;
+                                    const string = ((e.target.value).trim()).length;
                                     setTypedCharacter(string);
                                 }}
                               }
