@@ -8,12 +8,46 @@ export default function Register(){
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [repassword, setRepassword] = useState('');
 
     const handleSignUp = () => {
+
+        const trimmedUser = username.trim();
+        const trimmedPassword = password.trim();
+
+        const bannedChar = ['@','%','#','&','\"','\'','=','+','-','(',')','[',']','^','?','<','>'];
+
+        if (username.includes(' ') || password.includes(' '))
+        {
+            alert("Username or Password cannot contain spaces");
+            return;
+        }
+
+        
+
+        if (trimmedUser.length == 0 || trimmedPassword.length ==0)
+        {
+            alert("Your Username or Password cannot be blank")
+            return;
+        } 
+        if (repassword != password)
+        {
+            alert("Please make sure your re-entered password matches your password")
+            return;
+        }
+
+        for (const char of bannedChar) {
+            if (username.includes(char)) {
+              alert(`Username cannot contain special character`);
+              return;
+            }
+          }
+
         const payload = {
           username,
           password
         };
+        
     
         console.log('Signing up with:', payload);
       };
@@ -63,8 +97,8 @@ export default function Register(){
                                     id="password"
                                     type="password"
                                     placeholder=""
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
+                                    value={repassword}
+                                    onChange={(e) => setRepassword(e.target.value)}
                                     />
                                 </div>
                                 <div className="flex items-center justify-center">
