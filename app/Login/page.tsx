@@ -2,9 +2,19 @@
 import Navbar from "@/components/Navbar";
 import Link from 'next/link';
 import React, { useState } from 'react';
+import axios from "axios";
+
+const request = axios.create({
+  baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
+});
 
 
-export default function Login(){
+type payload = {username:string,password:string}
+
+export const Login = (data:payload)=>
+        	request.post("http://34.124.245.31:8000/login" , data)
+
+export default function UserLogin(){
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -14,6 +24,21 @@ export default function Login(){
           username,
           password
         };
+
+        Login(payload)
+        .then((response) => {
+            // Handle the response
+                  console.log('Login successfully:', response.data);
+                  const token = response.data.token;
+                  console.log(token);
+                  
+              })
+              .catch((error) => {
+            // Handle errors
+                  console.error('Error Login:', error);
+                  alert("Incorrect Username or Password");
+               });
+        
     
         console.log('Signing in with:', payload);
       };

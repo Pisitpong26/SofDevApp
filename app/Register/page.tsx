@@ -2,9 +2,19 @@
 import Navbar from "@/components/Navbar";
 import Link from 'next/link';
 import React, { useState } from 'react';
+import axios from "axios";
 
+const request = axios.create({
+    baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
+  });
+  
+  
+  type payload = {firstname:string,lastname:string,username:string,password:string}
+  
+  export const Register = (data:payload)=>
+              request.post("http://34.124.245.31:8000/register" , data)
 
-export default function Register(){
+export default function RegisterUser(){
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -43,10 +53,27 @@ export default function Register(){
             }
           }
 
+
+        const firstname ="placeholder";
+        const lastname ="placeholder";
         const payload = {
+          firstname,
+          lastname,
           username,
           password
         };
+
+        Register(payload)
+        .then((response) => {
+            // Handle the response
+                  console.log('Register successfully:', response.data);
+                  const token = response.data.token;
+                  console.log(token);
+              })
+              .catch((error) => {
+            // Handle errors
+                  console.error('Register Error:', error);
+               });
         
     
         console.log('Signing up with:', payload);
