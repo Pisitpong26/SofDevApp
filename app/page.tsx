@@ -98,7 +98,7 @@ export default function Home() {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
           stretch: 420,
@@ -106,8 +106,8 @@ export default function Home() {
           modifier: 2.5,
         }}
           navigation={{
-          nextEl: '.next',
-          prevEl: '.prev'
+          nextEl: '.prev',
+          prevEl: '.next'
         }}
         modules={[EffectCoverflow, Navigation]}
         className="mySwiper"
@@ -166,7 +166,7 @@ export default function Home() {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
           stretch: 420,
@@ -174,8 +174,8 @@ export default function Home() {
           modifier: 2.5,
         }}
           navigation={{
-          nextEl: '.nextS',
-          prevEl: '.prevS'
+          nextEl: '.prevS',
+          prevEl: '.nextS'
         }}
         modules={[EffectCoverflow, Navigation]}
         className="mySwiper"
