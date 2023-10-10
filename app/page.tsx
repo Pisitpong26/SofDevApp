@@ -20,6 +20,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import '@ionic/react/css/core.css';
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import Footer from "@/components/Footer";
 // import { IonIcon } from "@ionic/react";
 
 export default function Home() {
@@ -91,13 +92,13 @@ export default function Home() {
           </div>
       </div>
 
-      <div className="h-[400px] ml-32 flex flex-row justify-center items-center">
+      <div className="w-[1400px] h-[400px] ml-32 flex flex-row justify-center items-center">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
           stretch: 420,
@@ -105,8 +106,8 @@ export default function Home() {
           modifier: 2.5,
         }}
           navigation={{
-          nextEl: '.next',
-          prevEl: '.prev'
+          nextEl: '.prev',
+          prevEl: '.next'
         }}
         modules={[EffectCoverflow, Navigation]}
         className="mySwiper"
@@ -159,13 +160,13 @@ export default function Home() {
           </div>
       </div>
 
-      <div className="h-[400px] ml-32 flex flex-row justify-center items-center">
+      <div className="w-[1400px] h-[400px] ml-32 flex flex-row justify-center items-center">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
           stretch: 420,
@@ -173,8 +174,8 @@ export default function Home() {
           modifier: 2.5,
         }}
           navigation={{
-          nextEl: '.nextS',
-          prevEl: '.prevS'
+          nextEl: '.prevS',
+          prevEl: '.nextS'
         }}
         modules={[EffectCoverflow, Navigation]}
         className="mySwiper"
@@ -213,7 +214,7 @@ export default function Home() {
       </div>
       
       <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  ">SEE ALL</h1>
-
+      <Footer/>
     </main> 
   )
 }

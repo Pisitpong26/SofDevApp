@@ -17,7 +17,7 @@ class Footer extends Component {
             lineHeight: 'normal'
         }}>TravelerTale</h1>
         <img
-                src="../Footer/footer-removebg-preview 2.png"
+                src="../Footer/Footer1.png"
                 alt="Footer"
                 className="w-full" /></div>
     );
