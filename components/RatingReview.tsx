@@ -2,13 +2,15 @@
 "use client"; // This is a client component
 import React, { useState } from 'react';
 import { Rating, RoundedStar } from '@smastrom/react-rating'
-
 import '@smastrom/react-rating/style.css'
 import axios from "axios";
+import getToken from './getToken';
+import getUsername from './getUsername';
 
 const request = axios.create({
   baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
 });
+
 
 
 type AddAttractionReviewRequestBody = {attractionId: string; detail: string; rating: number; } 
