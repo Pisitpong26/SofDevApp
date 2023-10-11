@@ -21,6 +21,7 @@ import 'swiper/css/navigation';
 // import '@ionic/react/css/core.css';
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 // import { IonIcon } from "@ionic/react";
 
 export default function Home() {
@@ -35,14 +36,14 @@ export default function Home() {
       <Catagory/>
       <div className="mx-auto mt-48   mb-10 flex flex-col justify-center items-center">
         <Image src="/Pic/history.png" width={90} height={90} alt="Picture of the author"/>
-        <h1 className="font-bold text-center text-6xl text-cyan-800  ">History</h1>
-        <h1 className="font-bold text-center text-sm ">ประวัติความเป็นมาของจังหวัดตาก</h1>
+        <h1 className="font-bold text-center text-6xl text-cyan-800  ">Information</h1>
+        <h1 className="font-bold text-center text-sm ">ข้อมูลทั่วไปของจังหวัดตาก</h1>
       </div>
       {/* history */}
       <div className="w-[900px] h-[300px] bg-white rounded-[20px] mx-auto shadow-2xl flex flex-row justify-around  items-center">
         <Image src="/Pic/Banner.jpeg" width={300} height={200} alt="Picture of the author"/>
         <div className="w-[500px] h-[200px] flex flex-col">
-          <h1 className="font-bold text-center text-xl my-5">ประวัติความเป็นมาของจังหวัดตาก</h1>
+          <h1 className="font-bold text-center text-xl my-5">ข้อมูลทั่วไป</h1>
           <h1 className="font-bold text-left text-sm">คำขวัญประจำจังหวัด :  ธรรมชาติน่ายล ภูมิพลเขื่อนใหญ่ พระเจ้าตากเกรียงไกร เมืองไม้และป่างาม</h1>
           <h1 className="font-bold text-left text-sm">ตราประจำจังหวัด : รูปสมเด็จพระเนรศวรมหาราชทรงหลั่ง
           ทักษิโณทกบนคอช้าง</h1>
@@ -56,21 +57,31 @@ export default function Home() {
       <div className="w-[1200px] h-[300px] bg-banner2-bg mx-auto my-10 shadow-2xl flex flex-col justify-around  items-center">
         <div className="w-[1200px] h-[1500px] flex flex-row justify-around items-center">
 
-          <div className="w-[150px] h-[150px] bg-cyan-600  rounded-[20px] shadow-xl flex flex-col justify-center items-center">
-                <FaLocationDot className = "w-[70px] h-[70px] fill-white"/>
-          </div>
-          <div className="w-[150px] h-[150px] bg-orange-500 rounded-[20px] shadow-xl flex flex-col justify-center items-center">
-              <FaBoxArchive className = "w-[70px] h-[70px] fill-white"/>
-              
-          </div>
-          <div className="w-[150px] h-[150px] bg-yellow-300 rounded-[20px] shadow-xl flex flex-col justify-center items-center">
-              <BiSolidMessageRoundedError className = "w-[70px] h-[70px] fill-white"/>
-          </div>
-          <div className="w-[150px] h-[150px] bg-orange-500 rounded-[20px] shadow-xl flex flex-col justify-center items-center">
-              <BsTelephoneFill className = "w-[70px] h-[70px] fill-white"/>
-          </div>
-        </div>
+          <Link href="/Attraction">
+            <div className="w-[150px] h-[150px] bg-cyan-600  rounded-[20px] shadow-xl flex flex-col justify-center items-center">
+                  <FaLocationDot className = "w-[70px] h-[70px] fill-white"/>
+            </div>
+          </Link> 
 
+          <Link href="/Products">
+            <div className="w-[150px] h-[150px] bg-orange-500 rounded-[20px] shadow-xl flex flex-col justify-center items-center">
+                <FaBoxArchive className = "w-[70px] h-[70px] fill-white"/>
+            </div>
+          </Link>
+
+          <Link href="/About">
+            <div className="w-[150px] h-[150px] bg-yellow-300 rounded-[20px] shadow-xl flex flex-col justify-center items-center">
+                <BiSolidMessageRoundedError className = "w-[70px] h-[70px] fill-white"/>
+            </div>
+          </Link>
+          
+          <Link href="/Contact">
+            <div className="w-[150px] h-[150px] bg-orange-500 rounded-[20px] shadow-xl flex flex-col justify-center items-center">
+                <BsTelephoneFill className = "w-[70px] h-[70px] fill-white"/>
+            </div>
+          </Link>
+        </div>
+    
         <div className="w-[1200px] h-[50px] flex flex-row justify-around mb-10 ">
           <h1 className="w-[150px] text-white font-bold text-center">ATTRACTION</h1>
           <h1 className="w-[150px] text-white font-bold text-center">PRODUCT</h1>
@@ -83,16 +94,16 @@ export default function Home() {
       <div className="slider-controler w-[1500px] h-[50px] flex flex-row justify-around my-12 items-center">
         <h1 className="w-[500px] text-black font-bold text-left ml-10 text-2xl">ATTRACTRION</h1>
           <div className="w-[500px] flex flex-row justify-end">
-            <div className="next">
+            <div className="prev">
               <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] mx-2"/>
             </div>
-            <div className="prev">
+            <div className="next">
               <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] rotate-180 fill-cyan-700 mx-2"/>
             </div>
           </div>
       </div>
 
-      <div className="w-[1400px] h-[400px] ml-32 flex flex-row justify-center items-center">
+      <div className="w-[1400px] h-[400px] ml-28 flex flex-row justify-center items-center">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -101,13 +112,13 @@ export default function Home() {
         slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
-          stretch: 420,
+          stretch: 410,
           depth: 0,
           modifier: 2.5,
         }}
           navigation={{
-          nextEl: '.prev',
-          prevEl: '.next'
+          nextEl: '.next',
+          prevEl: '.prev'
         }}
         modules={[EffectCoverflow, Navigation]}
         className="mySwiper"
@@ -145,22 +156,22 @@ export default function Home() {
       </Swiper>
       </div>
       
-      <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  ">SEE ALL</h1>
+      <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  "><Link href="/Attraction">SEE ALL</Link></h1>
 
       {/*Product*/}
       <div className="slider-controler w-[1500px] h-[50px] flex flex-row justify-around my-12 items-center">
         <h1 className="w-[500px] text-black font-bold text-left ml-10 text-2xl">PRODUCT</h1>
           <div className="w-[500px] flex flex-row justify-end">
-            <div className="nextS">
+            <div className="prevS">
               <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] mx-2"/>
             </div>
-            <div className="prevS">
+            <div className="nextS">
               <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] rotate-180 fill-cyan-700 mx-2"/>
             </div>
           </div>
       </div>
 
-      <div className="w-[1400px] h-[400px] ml-32 flex flex-row justify-center items-center">
+      <div className="w-[1400px] h-[400px] ml-28 flex flex-row justify-center items-center">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -169,13 +180,13 @@ export default function Home() {
         slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
-          stretch: 420,
+          stretch: 410,
           depth: 0,
           modifier: 2.5,
         }}
           navigation={{
-          nextEl: '.prevS',
-          prevEl: '.nextS'
+          nextEl: '.nextS',
+          prevEl: '.prevS'
         }}
         modules={[EffectCoverflow, Navigation]}
         className="mySwiper"
@@ -213,7 +224,7 @@ export default function Home() {
       </Swiper>
       </div>
       
-      <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  ">SEE ALL</h1>
+      <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  "><Link href="/Products">SEE ALL</Link></h1>
       <Footer/>
     </main> 
   )
