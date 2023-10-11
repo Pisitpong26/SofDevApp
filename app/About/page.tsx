@@ -26,7 +26,7 @@ export default function About(){
                 <div className="text-md">Noparut Chantan</div>
             </div>
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
-                <img src="/Member/3.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
+                <img src="/Member/ritaxtii.png" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64010522</div>
                 <div className="text-md">Parita Nawaree</div>
             </div>

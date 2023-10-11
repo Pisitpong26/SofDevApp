@@ -27,6 +27,10 @@ export default function AttractionDetail(){
             <div className="mt-10 text-black text-justify px-40 text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
+            <div className="flex justify-center mt-5">
+                
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.660451129146!2d98.75081922473596!3d15.926849943234629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e71479542dda01%3A0x66d1ff88b7ec4da4!2sThi%20Lo%20Su%20Waterfall!5e0!3m2!1sen!2sth!4v1697019018494!5m2!1sen!2sth" width="600" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
             <Rating
                 five={15}

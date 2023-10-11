@@ -41,6 +41,7 @@ npm install -D typescript
 npm install react
 npm install swiper@10.3.0
 npm i @smastrom/react-rating
+npm i axios@1.5.1
 ```
 
 ## Run Command

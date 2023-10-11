@@ -14,9 +14,9 @@ const request = axios.create({
 type AddAttractionReviewRequestBody = {attractionId: string; detail: string; rating: number; } 
 
 export const AddAttractionReview = (data: AddAttractionReviewRequestBody, authToken: string) =>
-  request.post("http://http://34.124.245.31/attraction/addReview", data, {
+  request.post("http://34.124.245.31/attraction/addReview", data, {
     headers: {
-      Authorization: `${authToken}`, // Replace 'Bearer' with the appropriate authentication scheme if needed
+      authorization: `${authToken}`, // Replace 'Bearer' with the appropriate authentication scheme if needed
     },
   });
 
