@@ -1,3 +1,4 @@
+"use client"; // This is a client component
 const getUsername = () => {
     if (typeof window !== 'undefined' && window.localStorage) {
       const token = localStorage.getItem('username');
