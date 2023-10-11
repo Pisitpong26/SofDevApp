@@ -15,6 +15,7 @@ module.exports = {
         "banner-bg": "url('../public/Pic/Banner.jpeg')",
         "banner1-bg": "url('../public/Pic/Banner1.jpg')",
         "banner2-bg": "url('../public/Pic/bg.png')",
+        "footer-bg": "url('../public/Footer/Footer1.png')",
       },
     },
   },
