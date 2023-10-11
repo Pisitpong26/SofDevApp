@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Link from 'next/link';
 import React, { useState } from 'react';
 import axios from "axios";
+import { useRouter } from 'next/navigation';
 
 const request = axios.create({
   baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
@@ -18,6 +19,7 @@ export default function UserLogin(){
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const router = useRouter();
 
     const handleSignIn = () => {
         const payload = {
@@ -32,6 +34,8 @@ export default function UserLogin(){
                   const token = response.data.token;
                   console.log(token);
                   localStorage.setItem('token', token);
+                  localStorage.setItem('username',username);
+                  router.push('/Attraction');
                   
               })
               .catch((error) => {

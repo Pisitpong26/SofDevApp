@@ -114,9 +114,12 @@ export default function AttractionDetail({}){
             ></Rating>
             
             
-            <div className="bg-gray-300 bg-opacity-30">
-                <div className="text-4xl font-bold text-blue w-full text-center ">
+            <div className="flex flex-col justify-center items-center h-full bg-gray-300 bg-opacity-30">
+                <div className="text-4xl font-bold text-blue">
                     Reviews
+                </div>
+                <div className="mt-1">
+                    Swipe to See More
                 </div>
             </div>
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 "> 
