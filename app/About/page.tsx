@@ -21,7 +21,7 @@ export default function About(){
                 <div className="text-md">Krit Tangpinyoputtikhun</div>
             </div>
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
-                <img src="/Member/2.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
+                <img src="/Member/por.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64010403</div>
                 <div className="text-md">Noparut Chantan</div>
             </div>
@@ -31,39 +31,39 @@ export default function About(){
                 <div className="text-md">Parita Nawaree</div>
             </div>
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
-                <img src="/Member/7.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
+                <img src="/Member/kong.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64010546</div>
                 <div className="text-md">Pacharapong Supha</div>
             </div>
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
-                <img src="/Member/5.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
+                <img src="/Member/arm.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64010575</div>
                 <div className="text-md">Phatcharaphon Kaewriporn</div>
             </div>
         </div>
         <div className="flex flex-row w-full h-[400px] justify-center gap-6 mt-1">
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
-                <img src="/Member/8.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
+                <img src="/Member/james.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64010609</div>
                 <div className="text-md">Pisitpong Plongkerd</div>
             </div>
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
-                <img src="/Member/6.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
+                <img src="/Member/tonfah.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64010815</div>
                 <div className="text-md">Wiroon Somphaothong</div>
             </div>
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
-                <img src="/Member/4.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
+                <img src="/Member/two.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64010806</div>
                 <div className="text-md">Withun Watcharakritwekhin</div>
             </div>
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
-                <img src="/Member/special.gif" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
+                <img src="/Member/oat.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64010860</div>
                 <div className="text-md">Suppaphol Areewattanawong</div>
             </div>
             <div className="flex flex-col h-[350px] w-[250px]  rounded-xl bg-white items-center shadow-xl">
-                <img src="/Member/10.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
+                <img src="/Member/mind.jpg" className="w-[195px] h-[260px] rounded-lg mt-5"></img>
                 <div className="font-bold text-xl mt-2">64011018</div>
                 <div className="text-md">Artitaya Pimsupaporn</div>
             </div>
