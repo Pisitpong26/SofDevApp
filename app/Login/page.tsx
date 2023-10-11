@@ -31,6 +31,7 @@ export default function UserLogin(){
                   console.log('Login successfully:', response.data);
                   const token = response.data.token;
                   console.log(token);
+                  localStorage.setItem('token', token);
                   
               })
               .catch((error) => {
