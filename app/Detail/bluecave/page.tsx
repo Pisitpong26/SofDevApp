@@ -9,35 +9,72 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import axios from "axios";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const request = axios.create({
   baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
 });
 
-
-
-interface AttractionDetail {
-    
-    star:number;
-}
-
-interface Review {
-    username: string;
-    star: number;
-    content: string;
-}
-
-const reviews: Review[] = [
-    {
-        username: 'วัยรุ่นเมกัน',
-        star: 5,
-        content: 'โคตรสุดโคตรเอา',
-    }
-];
+export const GetAllAttraction = ()=>
+        	request.get("http://34.124.245.31:8000/attraction" )
 
 
 export default function AttractionDetail({}){
+    const [attractionReview, setAttractionReview] = useState<any[]>([]);
+    useEffect(() => {
+        // Fetch the attraction review data here and update the state with setAttractionReview
+        // Example: fetchAttractionReview().then((response) => setAttractionReview(response.data));
+        GetAllAttraction()
+        .then((response) => {
+            const attractions = response.data[0].attractions;
+            if (attractions && attractions.length > 0) {
+                const AttractionName = attractions[3].name;
+                const AttractionReview = attractions[3].reviews;
+                setAttractionReview(AttractionReview);
+                console.log('Attraction Name:', AttractionName);
+                console.log('Reviews',AttractionReview)
+              } else {
+                console.log('No attractions found.');
+            }
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error('Error getting attractions:', error);
+            alert('Error reading value');
+          });
+    }, []);
 
+    const ratingCounts = {
+        five: 0,
+        four: 0,
+        three: 0,
+        two: 0,
+        one: 0
+    };
+
+    attractionReview.forEach(attractionReview => {
+        switch (attractionReview.rating) {
+            case 5:
+                ratingCounts.five++;
+                break;
+            case 4:
+                ratingCounts.four++;
+                break;
+            case 3:
+                ratingCounts.three++;
+                break;
+            case 2:
+                ratingCounts.two++;
+                break;
+            case 1:
+                ratingCounts.one++;
+                break;
+            default:
+                break;
+        }
+    });
+    
+    
     return(
         
         <main>
@@ -61,14 +98,14 @@ export default function AttractionDetail({}){
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.6252404782244!2d98.70992847474885!3d16.602382024945445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dd910d53d948f3%3A0xe5fd908344354ce3!2sBlue%20Cave!5e1!3m2!1sen!2sth!4v1697020062553!5m2!1sen!2sth" width="600" height="450" style={{ border: '0' }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 
             </div>
-
+            
             
             <Rating
-                five={23}
-                four={11}
-                three={20}
-                two={14}
-                one={1}
+                five={ratingCounts.five}
+                four={ratingCounts.four}
+                three={ratingCounts.three}
+                two={ratingCounts.two}
+                one={ratingCounts.one}
                 id="6719c065-3c21-4890-8e3f-32a35922f6d7"
             ></Rating>
              
@@ -87,43 +124,11 @@ export default function AttractionDetail({}){
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                <SwiperSlide><ReviewCard
-                    username="16sakuraa"
-                    star={4}
-                    content="ผมลองมาเล่นบอลตามพี่คนนี้ดู แกคัดบอลแม่นดี บอลสเต็ปแตกบ่อยมากครับ #กำไรเต็มคาราเบล #มีแจกแนวทางหน้าเฟสฟรีทุกวัน ลองกดติดตามดู Suppaphol Areewattanawong"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="Kanom"
-                    star={5}
-                    content="สวยขนาดนี้ไม่มาไหวอ่อ"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="Apple"
-                    star={5}
-                    content="ถ้ำสวยมาก มีที่ให้ถ่ายรูปเยอะเลย รีบไปตอนคนยังไม่เยอะนะ เพราะที่จอดรถน้อย  "
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="มารายแครี่"
-                    star={4}
-                    content="ชอบบรรยากาศแห่งการได้ร่ำเมรัย ร่วมวงกับเพื่อนรู้ใจจะหาสุขใดไม่มีเปรียบปราน"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="เกิดมาเพื่อเกรียน"
-                    star={1}
-                    content="กาก"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="โอ๊ต"
-                    star={3}
-                    content="โอ้ยคิดไม่ออกไม่รู้จะเขียนอะไร"
-                
-                ></ReviewCard></SwiperSlide>
-                
+                {attractionReview.map((attractionReview, index) => (
+                        <SwiperSlide key={index}>
+                            <ReviewCard username={attractionReview.user.username} star={attractionReview.rating} content={attractionReview.detail} />
+                        </SwiperSlide>
+                        ))}
                 </Swiper>
     
             </div>
@@ -176,3 +181,42 @@ export default function AttractionDetail({}){
                                 4.0
                             </div>
                             <div cl */}
+
+
+
+                            {/* <SwiperSlide><ReviewCard
+                    username="16sakuraa"
+                    star={4}
+                    content="ผมลองมาเล่นบอลตามพี่คนนี้ดู แกคัดบอลแม่นดี บอลสเต็ปแตกบ่อยมากครับ #กำไรเต็มคาราเบล #มีแจกแนวทางหน้าเฟสฟรีทุกวัน ลองกดติดตามดู Suppaphol Areewattanawong"
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="Kanom"
+                    star={5}
+                    content="สวยขนาดนี้ไม่มาไหวอ่อ"
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="Apple"
+                    star={5}
+                    content="ถ้ำสวยมาก มีที่ให้ถ่ายรูปเยอะเลย รีบไปตอนคนยังไม่เยอะนะ เพราะที่จอดรถน้อย  "
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="มารายแครี่"
+                    star={4}
+                    content="ชอบบรรยากาศแห่งการได้ร่ำเมรัย ร่วมวงกับเพื่อนรู้ใจจะหาสุขใดไม่มีเปรียบปราน"
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="เกิดมาเพื่อเกรียน"
+                    star={1}
+                    content="กาก"
+                
+                ></ReviewCard></SwiperSlide>
+                <SwiperSlide><ReviewCard
+                    username="โอ๊ต"
+                    star={3}
+                    content="โอ้ยคิดไม่ออกไม่รู้จะเขียนอะไร"
+                
+                ></ReviewCard></SwiperSlide> */}

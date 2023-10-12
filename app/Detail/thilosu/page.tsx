@@ -8,7 +8,67 @@ import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Link from "next/link";
+import axios from "axios";
+import { useEffect, useState } from "react";
+const request = axios.create({
+  baseURL: "http://34.124.245.31:8000" 
+});
+
+export const GetAllAttraction = ()=>
+        	request.get("http://34.124.245.31:8000/attraction" )
+
 export default function AttractionDetail(){
+    const [attractionReview, setAttractionReview] = useState<any[]>([]);
+    useEffect(() => {
+        GetAllAttraction()
+        .then((response) => {
+            const attractions = response.data[0].attractions;
+            if (attractions && attractions.length > 0) {
+                const AttractionName = attractions[0].name;
+                const AttractionReview = attractions[0].reviews;
+                setAttractionReview(AttractionReview);
+                console.log('Attraction Name:', AttractionName);
+                console.log('Reviews',AttractionReview)
+              } else {
+                console.log('No attractions found.');
+            }
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error('Error getting attractions:', error);
+            alert('Error reading value');
+          });
+    }, []);
+
+    const ratingCounts = {
+        five: 0,
+        four: 0,
+        three: 0,
+        two: 0,
+        one: 0
+    };
+
+    attractionReview.forEach(attractionReview => {
+        switch (attractionReview.rating) {
+            case 5:
+                ratingCounts.five++;
+                break;
+            case 4:
+                ratingCounts.four++;
+                break;
+            case 3:
+                ratingCounts.three++;
+                break;
+            case 2:
+                ratingCounts.two++;
+                break;
+            case 1:
+                ratingCounts.one++;
+                break;
+            default:
+                break;
+        }
+    });
     return(
         
         <main>
@@ -34,11 +94,11 @@ export default function AttractionDetail(){
             </div>
 
             <Rating
-                five={15}
-                four={4}
-                three={2}
-                two={1}
-                one={1}
+                five={ratingCounts.five}
+                four={ratingCounts.four}
+                three={ratingCounts.three}
+                two={ratingCounts.two}
+                one={ratingCounts.one}
                 id='77bb3e20-34bd-4ab3-b6a4-8ca12a49d4fd'
             ></Rating>
             <div className="flex flex-col justify-center items-center h-full bg-gray-300 bg-opacity-30">
@@ -49,26 +109,6 @@ export default function AttractionDetail(){
                     Swipe to See More
                 </div>
             </div>
-            {/* <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[40px]"> 
-                <ReviewCard
-                    username="วัยรุ่นเมกัน"
-                    star={4}
-                    content="โคตรสุดโคตรเอา"
-                
-                ></ReviewCard>
-                <ReviewCard
-                    username="Marmalade"
-                    star={5}
-                    content="สวยมากค่า พนง. ใจดีบริการเป็นกันเองสุด ๆ ค่าเข้าไม่แพง ที่จอดรถเยอะ ให้ห้าดาวเลยค่า"
-                
-                ></ReviewCard>
-                <ReviewCard
-                    username="น้าอู๊ด"
-                    star={1}
-                    content="งงเลย ไปถึงหน้าประตูทางเข้าแล้ว ประตูติดป้ายว่าเลื่อน ไม่รู้ต้องมาวันไหน"
-                
-                ></ReviewCard>
-            </div> */}
 
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 "> 
                 <Swiper
@@ -77,43 +117,11 @@ export default function AttractionDetail(){
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                <SwiperSlide><ReviewCard
-                    username="วัยรุ่นเมกัน"
-                    star={5}
-                    content="โคตรสุดโคตรเอา"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="Marmalade"
-                    star={5}
-                    content="สวยมากค่า พนง. ใจดีบริการเป็นกันเองสุด ๆ ค่าเข้าไม่แพง ที่จอดรถเยอะ ให้ห้าดาวเลยค่า"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="น้าอู๊ด"
-                    star={1}
-                    content="งงเลย ไปถึงหน้าประตูทางเข้าแล้ว ประตูติดป้ายว่าเลื่อน ไม่รู้ต้องมาวันไหน"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="มารายแครี่"
-                    star={4}
-                    content="ชอบบรรยากาศแห่งการได้ร่ำเมรัย ร่วมวงกับเพื่อนรู้ใจจะหาสุขใดไม่มีเปรียบปราน"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="เซาะกราว"
-                    star={4}
-                    content="ดีแหละ"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="โอ๊ต"
-                    star={3}
-                    content="โอ้ยคิดไม่ออกไม่รู้จะเขียนอะไร"
-                
-                ></ReviewCard></SwiperSlide>
-                
+                {attractionReview.map((attractionReview, index) => (
+                        <SwiperSlide key={index}>
+                            <ReviewCard username={attractionReview.user.username} star={attractionReview.rating} content={attractionReview.detail} />
+                        </SwiperSlide>
+                        ))}
                 </Swiper>
     
             </div>

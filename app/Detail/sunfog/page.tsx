@@ -10,77 +10,70 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import axios from "axios";
+
+const request = axios.create({
+  baseURL: "http://34.124.245.31:8000" 
+});
+
+export const GetAllAttraction = ()=>
+        	request.get("http://34.124.245.31:8000/attraction" )
 
 
-interface Review {
-    username: string;
-    star: number;
-    content: string;
-}
-
-interface Hotel {
-    hotelname: string;
-    image: string;
-    star: number;
-    rating: number;
-    price: string;
-    
-}
-
-
-const reviews: Review[] = [
-    {
-      username: 'วัยรุ่นเมกัน',
-      star: 5,
-      content: 'โคตรสุดโคตรเอา',
-    },
-    {
-        username: 'วัยรุ่นเมกัน',
-        star: 5,
-        content: 'โคตรสุดโคตรเอา',
-      },
-      {
-        username: 'วัยรุ่นเมกัน',
-        star: 5,
-        content: 'โคตรสุดโคตรเอา',
-      },
-      {
-        username: 'วัยรุ่นเมกัน',
-        star: 5,
-        content: 'โคตรสุดโคตรเอา',
-      },
-      {
-        username: 'วัยรุ่นเมกัน',
-        star: 5,
-        content: 'โคตรสุดโคตรเอา',
-      },
-   
-  ];
-
-const hotels: Hotel[] = [
-    {
-        hotelname: 'Cat Hotel',
-        image:'../Hotel/catshark.png',
-        star:4,
-        rating:4,
-        price:'1,699'
-    }
-];
 
 
 export default function AttractionDetail({}){
-    // const [reviews, setReviews] = useState([
-    //     {
-    //       username: 'วัยรุ่นเมกัน',
-    //       star: 5,
-    //       content: 'โคตรสุดโคตรเอา',
-    //     },
-    //   ]);
-    //   const handleReviewSubmit = (newReview: { username: string; star: number; content: string; }) => {
-    //     console.log('New Review:', newReview);
-    //     setReviews([...reviews, newReview]);
-    //   };
+    const [attractionReview, setAttractionReview] = useState<any[]>([]);
+    useEffect(() => {
+        GetAllAttraction()
+        .then((response) => {
+            const attractions = response.data[0].attractions;
+            if (attractions && attractions.length > 0) {
+                const AttractionName = attractions[2].name;
+                const AttractionReview = attractions[2].reviews;
+                setAttractionReview(AttractionReview);
+                console.log('Attraction Name:', AttractionName);
+                console.log('Reviews',AttractionReview)
+              } else {
+                console.log('No attractions found.');
+            }
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error('Error getting attractions:', error);
+            alert('Error reading value');
+          });
+    }, []);
 
+    const ratingCounts = {
+        five: 0,
+        four: 0,
+        three: 0,
+        two: 0,
+        one: 0
+    };
+
+    attractionReview.forEach(attractionReview => {
+        switch (attractionReview.rating) {
+            case 5:
+                ratingCounts.five++;
+                break;
+            case 4:
+                ratingCounts.four++;
+                break;
+            case 3:
+                ratingCounts.three++;
+                break;
+            case 2:
+                ratingCounts.two++;
+                break;
+            case 1:
+                ratingCounts.one++;
+                break;
+            default:
+                break;
+        }
+    });
     return(
         
         <main>
@@ -106,11 +99,11 @@ export default function AttractionDetail({}){
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1240833730985!2d98.82268737474831!3d16.57543082568861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dd93ef27158881%3A0x8d35dd14345963fd!2z4Lih4LmI4Lit4LiZ4Lir4Lih4Lit4LiB4LiV4Liw4Lin4Lix4LiZ!5e1!3m2!1sen!2sth!4v1697019621073!5m2!1sen!2sth"width="600" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>   
             </div>
             <Rating
-                five={20}
-                four={15}
-                three={3}
-                two={5}
-                one={20}
+                five={ratingCounts.five}
+                four={ratingCounts.four}
+                three={ratingCounts.three}
+                two={ratingCounts.two}
+                one={ratingCounts.one}
                 id="6993e1af-8c52-4289-8241-a9974daa7464"
             ></Rating>
             
@@ -130,9 +123,9 @@ export default function AttractionDetail({}){
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                     >
-                        {reviews.map((review, index) => (
+                {attractionReview.map((attractionReview, index) => (
                         <SwiperSlide key={index}>
-                            <ReviewCard username={review.username} star={review.star} content={review.content} />
+                            <ReviewCard username={attractionReview.user.username} star={attractionReview.rating} content={attractionReview.detail} />
                         </SwiperSlide>
                         ))}
                     </Swiper>
