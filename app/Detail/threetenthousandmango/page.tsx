@@ -9,6 +9,7 @@ import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 
 interface Review {
@@ -149,14 +150,14 @@ export default function AttractionDetail({}){
                 </div>
             </div>
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
-
+                <Link target="blank" href="https://www.agoda.com/th-th/umphangburiresort/hotel/tak-th.html?cid=1844104">        
                 <HotelCard
                     hotelname="อุ้มผางบุรี รีสอร์ท"
                     image="../Hotel/mango/1.jpg"
                     star={4}
                     rating={130}
                     price="1,066"
-                ></HotelCard>
+                ></HotelCard></Link>
                 {/* <HotelCard
                     hotelname="16sakuraa"
                     image="../Hotel/catshark.png"

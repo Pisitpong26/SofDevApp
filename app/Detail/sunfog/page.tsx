@@ -9,6 +9,7 @@ import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 
 interface Review {
@@ -144,28 +145,30 @@ export default function AttractionDetail({}){
                 </div>
             </div>
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
-
+                <Link target="blank" href="https://www.facebook.com/p/%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%A2-100076329438778/?paipv=0&eav=Afbt9bqRbjhhug4DTl7DA7WLVx49Nq3PWn5qVfS0MX2HUGfWnzdq37ZufwUmo9FMG-Q&_rdr">
                 <HotelCard
                     hotelname="บ้านทิวเขาดอยป่าหวาย"
                     image="../Hotel/sunfog/1.jpg"
                     star={5}
                     rating={34}
                     price="1,500"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.facebook.com/p/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%84%E0%B8%A1%E0%B8%9B%E0%B9%8C%E0%B8%9B%E0%B8%B4%E0%B9%89%E0%B8%87-%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%A2-100076266823553/?paipv=0&eav=AfYcY-lNsfhSyIw7VLzsj5c58pe-RklWkPflQ_s520kNViocpncrdJkWsDvkZmXfDxU&_rdr">
                 <HotelCard
                     hotelname="ฮักเขาแคมป์ปิ้ง"
                     image="../Hotel/sunfog/2.jpg"
                     star={5}
                     rating={6}
                     price="1,100"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.facebook.com/doipawaicamping/">
                 <HotelCard
                     hotelname="โฮมสเตย์ ดอยป่าหวาย"
                     image="../Hotel/sunfog/3.jpg"
                     star={5}
                     rating={6}
                     price="1,200"
-                ></HotelCard>
+                ></HotelCard></Link>
 
 
             </div>
