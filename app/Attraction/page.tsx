@@ -131,7 +131,7 @@ export default function Attraction() {
         slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 0,
+          stretch: 50,
           depth: 100,
           modifier: 2,
         }}
@@ -139,36 +139,67 @@ export default function Attraction() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
-        
+          <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/1.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/2.png" width={300} height={450} alt="Picture of the author"/>
-        
+          <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/2.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/3.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/3.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/4.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/4.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/5.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/5.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/6.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/6.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/7.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/7.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/8.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/8.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/9.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/9.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/10.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/10.jpg" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/11.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/12.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/13.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/14.jpg" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/15.jpg" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/16.jpg" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/17.jpg" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/18.jpg" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/19.jpg" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/20.jpg" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Nature/21.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper>
       </div>
@@ -185,7 +216,7 @@ export default function Attraction() {
         slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 0,
+          stretch: 50,
           depth: 100,
           modifier: 2,
         }}
@@ -193,34 +224,34 @@ export default function Attraction() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/6.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/1.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/7.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/2.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/8.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/3.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/9.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/4.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/10.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/5.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/11.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/6.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/12.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/7.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/13.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/8.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/14.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/9.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/15.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/History/10.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper></div>
       </div>
@@ -236,7 +267,7 @@ export default function Attraction() {
         slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 0,
+          stretch: 50,
           depth: 100,
           modifier: 2,
         }}
@@ -244,34 +275,37 @@ export default function Attraction() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/11.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/1.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/12.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/2.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/13.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/3.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/14.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/4.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/15.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/5.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/16.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/6.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/17.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/7.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/18.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/8.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/19.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/9.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/20.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/10.jpg" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Activity/11.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper></div>
       </div>
@@ -287,7 +321,7 @@ export default function Attraction() {
         slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 0,
+          stretch: 50,
           depth: 100,
           modifier: 2,
         }}
@@ -295,34 +329,34 @@ export default function Attraction() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/16.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/1.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/17.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/2.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/18.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/3.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/19.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/4.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/20.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/5.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/21.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/6.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/22.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/7.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/23.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/8.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/24.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/9.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/25.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Cafe/10.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper></div>
       </div>
@@ -338,7 +372,7 @@ export default function Attraction() {
         slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 0,
+          stretch: 50,
           depth: 100,
           modifier: 2,
         }}
@@ -346,34 +380,34 @@ export default function Attraction() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/21.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/1.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/22.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/2.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/23.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/3.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/24.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/4.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/25.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/5.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/6.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/2.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/7.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/3.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/8.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/4.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/9.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/5.png" width={300} height={450} alt="Picture of the author"/>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/Other/10.jpg" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
       </Swiper></div>
       </div>
