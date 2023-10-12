@@ -131,8 +131,8 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,id
       .catch((error) => {
     // Handle errors
           console.log(newReview)
-          console.log(authToken)
           console.error('Error adding review:', error);
+          alert("Please Login First!")
        });
     };
       
@@ -230,6 +230,7 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,id
                         </form>
                       </div>
                 </div>
+                
     
   );
 };
