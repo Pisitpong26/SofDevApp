@@ -92,9 +92,9 @@ export default function AttractionDetail({}){
             <div>
                 <AttractImage
                  imgSrc1="../AttractDetail/sunfog/1.png"
-                 imgSrc2="../AttractDetail/2.png"
-                 imgSrc3="../AttractDetail/3.jpg"
-                 imgSrc4="../AttractDetail/4.jpg"
+                 imgSrc2="../AttractDetail/sunfog/2.jpg"
+                 imgSrc3="../AttractDetail/sunfog/3.jpg"
+                 imgSrc4="../AttractDetail/sunfog/4.jpg"
                 ></AttractImage>
             </div>
             
