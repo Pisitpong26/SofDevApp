@@ -21,8 +21,8 @@ import Footer from '@/components/Footer';
 export default function Attraction() {
   return (
     <main>
-      <div className = "w-full h-100 bg-banner1-bg bg-center rounded-b-[80px]">
-        <div className="w-full h-100 bg-black bg-opacity-40 text-white rounded-b-[80px]">
+      <div className = "w-full h-[500px] bg-banner1-bg bg-center rounded-b-[150px]">
+        <div className="w-full h-[500px] bg-black bg-opacity-40 text-white rounded-b-[150px]">
           <Navbar/>
           <Banner/>
         </div>
@@ -119,26 +119,24 @@ export default function Attraction() {
       </div>
 
 
-      <div className="container-slider justify-center ml-12">
+      <div className="container-slider justify-center">
       <h4><span>ธรรมชาติ</span></h4>
       <br/>
+      <div className="ml-12 mr-12">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 450,
-          depth: 0,
-          modifier: 2.5,
-          slideShadows: true,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
         }}
-        
-        pagination={true}
         modules={[EffectCoverflow]}
-        className="mySwiper justify-center items-center"
+        className="mySwiper"
       >
         <SwiperSlide>
           <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
@@ -157,7 +155,23 @@ export default function Attraction() {
         <SwiperSlide>
         <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/5.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/6.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/7.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/8.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/9.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/10.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
       </Swiper>
+      </div>
       </div>
       <div className="container-slider justify-center ml-12">
       <h4><span>ประวัติศาสตร์</span></h4>
