@@ -46,8 +46,7 @@ const Navbar = () => {
               })
               .catch((error) => {
             // Handle errors
-                  console.error('Error Login:', error);
-                  alert("Incorrect Username or Password");
+                  console.error('Error Logout:', error);
                });
   };
 
