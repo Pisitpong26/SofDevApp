@@ -58,35 +58,35 @@ export default function Home() {
         <div className="w-[1200px] h-[1500px] flex flex-row justify-around items-center">
 
           <Link href="/Attraction">
-            <div className="w-[150px] h-[150px] bg-cyan-600  rounded-[20px] shadow-xl flex flex-col justify-center items-center">
+            <div className="w-[150px] h-[150px] bg-cyan-600  rounded-[20px] shadow-xl flex flex-col justify-center items-center hover:bg-cyan-800 cursor-pointer duration-300">
                   <FaLocationDot className = "w-[70px] h-[70px] fill-white"/>
             </div>
           </Link> 
 
           <Link href="/Products">
-            <div className="w-[150px] h-[150px] bg-orange-500 rounded-[20px] shadow-xl flex flex-col justify-center items-center">
+            <div className="w-[150px] h-[150px] bg-orange-500 rounded-[20px] shadow-xl flex flex-col justify-center items-center hover:bg-orange-700 cursor-pointer duration-300">
                 <FaBoxArchive className = "w-[70px] h-[70px] fill-white"/>
             </div>
           </Link>
 
           <Link href="/About">
-            <div className="w-[150px] h-[150px] bg-yellow-300 rounded-[20px] shadow-xl flex flex-col justify-center items-center">
+            <div className="w-[150px] h-[150px] bg-yellow-300 rounded-[20px] shadow-xl flex flex-col justify-center items-center hover:bg-yellow-500 cursor-pointer duration-300">
                 <BiSolidMessageRoundedError className = "w-[70px] h-[70px] fill-white"/>
             </div>
           </Link>
           
           <Link href="/Contact">
-            <div className="w-[150px] h-[150px] bg-orange-500 rounded-[20px] shadow-xl flex flex-col justify-center items-center">
+            <div className="w-[150px] h-[150px] bg-orange-500 rounded-[20px] shadow-xl flex flex-col justify-center items-center hover:bg-orange-700 cursor-pointer duration-300">
                 <BsTelephoneFill className = "w-[70px] h-[70px] fill-white"/>
             </div>
           </Link>
         </div>
     
         <div className="w-[1200px] h-[50px] flex flex-row justify-around mb-10 ">
-          <h1 className="w-[150px] text-white font-bold text-center">ATTRACTION</h1>
-          <h1 className="w-[150px] text-white font-bold text-center">PRODUCT</h1>
-          <h1 className="w-[150px] text-white font-bold text-center">ABOUT</h1>
-          <h1 className="w-[150px] text-white font-bold text-center">CONTACT</h1> 
+          <Link href="/Attraction"><h1 className="w-[150px] text-white font-bold text-center hover:text-stone-700 cursor-pointer duration-300">ATTRACTION</h1></Link>
+          <Link href="/Products"><h1 className="w-[150px] text-white font-bold text-center hover:text-stone-700 cursor-pointer duration-300">PRODUCT</h1></Link>
+          <Link href="/About"><h1 className="w-[150px] text-white font-bold text-center hover:text-stone-700 cursor-pointer duration-300">ABOUT</h1></Link>
+          <Link href="/Contact"><h1 className="w-[150px] text-white font-bold text-center hover:text-stone-700 cursor-pointer duration-300">CONTACT</h1></Link>
         </div>
       </div>
 
@@ -95,24 +95,24 @@ export default function Home() {
         <h1 className="w-[500px] text-black font-bold text-left ml-10 text-2xl">ATTRACTRION</h1>
           <div className="w-[500px] flex flex-row justify-end">
             <div className="prev">
-              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] mx-2"/>
+              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] hover:fill-slate-600 cursor-pointer duration-300 mx-2"/>
             </div>
             <div className="next">
-              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] rotate-180 fill-cyan-700 mx-2"/>
+              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] hover:fill-cyan-600 cursor-pointer duration-300 rotate-180 fill-cyan-700 mx-2"/>
             </div>
           </div>
       </div>
 
-      <div className="w-[1300px] h-[400px] ml-28 flex flex-row justify-center items-center">
+      <div className="w-[1300px] h-[400px] ml-32 flex flex-row justify-center items-center">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={4}
+        spaceBetween={20}
         coverflowEffect={{
           rotate: 0,
-          stretch: 400,
+          stretch: 0,
           depth: 0,
           modifier: 2.5,
         }}
@@ -143,6 +143,12 @@ export default function Home() {
 
         <SwiperSlide>
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/4.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
           <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Cafe/1.png" width={400} height={300} alt="Picture of the author"/> 
           </div>
         </SwiperSlide>
@@ -161,6 +167,12 @@ export default function Home() {
 
         <SwiperSlide> 
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Cafe/4.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
             <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/1.png" width={400} height={300} alt="Picture of the author"/> 
           </div>  
         </SwiperSlide>
@@ -170,35 +182,95 @@ export default function Home() {
             <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/2.jpg" width={400} height={300} alt="Picture of the author"/> 
           </div>  
         </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/3.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/4.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Activity/1.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Activity/2.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Activity/3.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Activity/4.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Other/1.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Other/2.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Other/3.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Other/4.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
         
       </Swiper>
       </div>
       
-      <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  "><Link href="/Attraction">SEE ALL</Link></h1>
+      <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl hover:text-cyan-400 cursor-pointer duration-300 "><Link href="/Attraction">SEE ALL</Link></h1>
 
       {/*Product*/}
       <div className="slider-controler w-[1500px] h-[50px] flex flex-row justify-around my-12 items-center">
         <h1 className="w-[500px] text-black font-bold text-left ml-10 text-2xl">PRODUCT</h1>
           <div className="w-[500px] flex flex-row justify-end">
             <div className="prevS">
-              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] mx-2"/>
+              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] hover:fill-slate-600 cursor-pointer duration-300 mx-2"/>
             </div>
             <div className="nextS">
-              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] rotate-180 fill-cyan-700 mx-2"/>
+              <BsFillArrowLeftCircleFill className = "w-[55px] h-[55px] hover:fill-cyan-600 cursor-pointer duration-300 rotate-180 fill-cyan-700 mx-2"/>
             </div>
           </div>
       </div>
 
-      <div className="w-[1400px] h-[400px] ml-28 flex flex-row justify-center items-center">
+      <div className="w-[1300px] h-[400px] ml-32 flex flex-row justify-center items-center">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        centeredSlides={true}
         loop={true}
-        slidesPerView={2}
+        slidesPerView={4}
+        spaceBetween={20}
         coverflowEffect={{
           rotate: 0,
-          stretch: 410,
+          stretch: 0,
           depth: 0,
           modifier: 2.5,
         }}
@@ -211,38 +283,128 @@ export default function Home() {
       >
         <SwiperSlide>
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/1.png" width={300} height={450} alt="Picture of the author"/>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
         <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/2.png" width={400} height={300} alt="Picture of the author"/>
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/2.png" width={400} height={300} alt="Picture of the author"/>
         </div>
         </SwiperSlide>
           
         <SwiperSlide>
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-           <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/3.png" width={400} height={300} alt="Picture of the author"/> 
-           </div>
+          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/3.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-           <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/4.png" width={400} height={300} alt="Picture of the author"/> 
+          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/4.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Cafe/1.png" width={400} height={300} alt="Picture of the author"/> 
           </div>
         </SwiperSlide>
 
         <SwiperSlide> 
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/5.png" width={400} height={300} alt="Picture of the author"/> 
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Cafe/2.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Cafe/3.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Cafe/4.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/1.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/2.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/3.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/4.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Activity/1.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Activity/2.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Activity/3.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Activity/4.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Other/1.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Other/2.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Other/3.jpg" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Other/4.png" width={400} height={300} alt="Picture of the author"/> 
           </div>  
         </SwiperSlide>
         
       </Swiper>
       </div>
       
-      <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  "><Link href="/Products">SEE ALL</Link></h1>
+      <h1 className=" text-cyan-600  font-bold text-right  my-12  mx-36  text-xl  hover:text-cyan-400 cursor-pointer duration-300 "><Link href="/Products">SEE ALL</Link></h1>
       <Footer/>
     </main> 
   )

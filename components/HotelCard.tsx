@@ -12,7 +12,7 @@ interface HotelCard {
 
 export const HotelCard: React.FC<HotelCard> = ({ hotelname,star,image,rating,price}) => {
   return (
-    <div className="flex flex-col border-2 w-[300px] h-[200px] bg-white shadow-xl rounded-md">
+    <div className="flex flex-col border-2 w-[300px] h-[200px] bg-white shadow-xl rounded-md hover:bg-stone-300  cursor-pointer duration-300">
                     <div className="flex flex-row">
                         <div className="flex flex-col w-[270px]">
                             <div className="pt-3 pl-4 font-bold text-blue text-lg">{hotelname}</div>
