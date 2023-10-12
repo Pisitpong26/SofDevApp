@@ -65,7 +65,7 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,id
     const twoP=((two/totalReview)*100).toFixed(0);
     const oneP=((one/totalReview)*100).toFixed(0);
 
-    const characterLimit = 200;
+    const characterLimit = 300;
     const [typedCharacter, setTypedCharacter] = useState(0);
     
 
@@ -126,7 +126,9 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,id
       .then((response) => {
     // Handle the response
         alert("Review added successfully")
-          console.log('Review added successfully:', response.data);
+        console.log('Review added successfully:', response.data);
+        setReviewContent('');
+        setRating(0);
       })
       .catch((error) => {
     // Handle errors
