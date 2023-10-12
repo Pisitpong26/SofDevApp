@@ -9,6 +9,7 @@ import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 
 interface Review {
@@ -133,35 +134,38 @@ export default function AttractionDetail({}){
                 </div>
             </div>
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
-
+                <Link target="blank" href="https://www.agoda.com/th-th/suansin-garden-hotel/hotel/all/tak-th.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1731617&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2023-10-17&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=THB&isFreeOccSearch=false&isCityHaveAsq=false&pushId=CgYIgJ23qQYSBgiAwLypBhgBIImd5wcqCioIIgIIASoCCAQ=49f2d163-cd27-78aa-7b8c-00e6eda47e2b_20231011_23&los=1&searchrequestid=6dd41d50-7419-476e-ac2e-858d9eed083a">
                 <HotelCard
                     hotelname="โรงแรมสวนสิน การ์เด้น"
                     image="../Hotel/waterfall/1.jpg"
                     star={4}
                     rating={485}
                     price="514"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.agoda.com/tak-andaman-resort-hotel-tak/hotel/tak-th.html?cid=1844104">
                 <HotelCard
                     hotelname="Tak Andaman Hotel"
                     image="../Hotel/waterfall/2.jpg"
                     star={4}
                     rating={246}
                     price="825"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.agoda.com/banrai-chernma-resort/hotel/tak-th.html?cid=1844104">
                 <HotelCard
                     hotelname="บ้านไร่เชิญมา รีสอร์ท"
                     image="../Hotel/waterfall/3.jpg"
                     star={4}
                     rating={331}
                     price="384"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.agoda.com/th-th/viangtak-riverside-hotel/hotel/tak-th.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1844104&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2023-10-12&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=THB&isFreeOccSearch=false&isCityHaveAsq=false&los=2&searchrequestid=c2d760ed-b31f-4cb6-892f-f68d9de0b29d">
                 <HotelCard
                     hotelname="เวียงตากริเวอร์ไซด์"
                     image="../Hotel/waterfall/4.jpg"
                     star={4}
                     rating={1218}
                     price="1,000"
-                ></HotelCard>
+                ></HotelCard></Link>
 
             </div>
 

@@ -9,6 +9,7 @@ import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 
 interface Review {
@@ -145,28 +146,30 @@ export default function AttractionDetail({}){
                 </div>
             </div>
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
-
+                <Link target="blank" href="https://www.facebook.com/p/Ozone-%E0%B9%82%E0%B8%AE%E0%B8%A1%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B8%A2%E0%B9%8C-100063006650516/?locale=th_TH&paipv=0&eav=AfYPtbRCGcI93PEZ1_THRmhknV1HiY8qLhmgwAdzP2q72MyhiNqULU3FBVAD7cDl6Co&_rdr">                
                 <HotelCard
                     hotelname="Ozone โฮมสเตย์"
                     image="../Hotel/mountain/1.jpg"
                     star={5}
                     rating={68}
                     price="725"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://th.tripadvisor.com/Hotel_Review-g2237761-d10287649-Reviews-Wongtawan_Resort-Tha_Song_Yang_Tak_Province.html">
                 <HotelCard
                     hotelname="วงศ์ตะวัน รีสอร์ท"
                     image="../Hotel/mountain/3.jpg"
                     star={5}
                     rating={17}
                     price="500"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.choowap.com/th/hotel/tha-song-yang-hill-resort">
                 <HotelCard
                     hotelname="ท่าสองยางฮิลล์ รีสอร์ท"
                     image="../Hotel/mountain/2.jpg"
                     star={4}
                     rating={82}
                     price="585"
-                ></HotelCard>
+                ></HotelCard></Link>
 
             </div>
 

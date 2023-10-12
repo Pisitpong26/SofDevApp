@@ -7,6 +7,7 @@ import ReviewCard from "@/components/ReviewCard"
 import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import Link from "next/link";
 export default function AttractionDetail(){
     return(
         
@@ -122,35 +123,39 @@ export default function AttractionDetail(){
                     Nearby Hotels
                 </div>
             </div>
-            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]">
+                <Link target="blank" href="https://www.facebook.com/profile.php?id=100047632188169"> 
                 <HotelCard
                     hotelname="บ้านริมธาร รีสอร์ท"
                     image="../Hotel/thilosu/1.jpg"
                     star={4}
                     rating={10}
                     price="650"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.theelorsuriverside.com/">
                 <HotelCard
                     hotelname="ทีลอซู ริเวอร์ไซด์"
                     image="../Hotel/thilosu/2.jpg"
                     star={4}
                     rating={152}
                     price="600"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.agoda.com/th-th/umphangburiresort/hotel/tak-th.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1841722&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2023-10-12&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=THB&isFreeOccSearch=false&tag=6c04f62b-c4e3-2428-76fa-9a63e1a506d3&isCityHaveAsq=false&los=2&searchrequestid=34d086da-2ff3-4c14-a773-851c2cb69685">
                 <HotelCard
                     hotelname="อุ้มผางบุรี รีสอร์ท"
                     image="../Hotel/thilosu/3.jpg"
                     star={4}
                     rating={130}
                     price="1,065"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.choowap.com/th/hotel/baan-buppachat-resort">
                 <HotelCard
                     hotelname="บ้านบุปชาติรีสอร์ท"
                     image="../Hotel/thilosu/4.jpg"
                     star={3}
                     rating={10}
                     price="790"
-                ></HotelCard>
+                ></HotelCard></Link>
 
             </div>
 
