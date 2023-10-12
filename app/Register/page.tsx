@@ -48,6 +48,12 @@ export default function RegisterUser(){
             return;
         }
 
+        if (trimmedPassword.length < 6)
+        {
+            alert("Password must be at least 6 characters long")
+            return;
+        }
+
         for (const char of bannedChar) {
             if (username.includes(char)) {
               alert(`Username cannot contain special character`);

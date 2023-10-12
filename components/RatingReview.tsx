@@ -137,7 +137,6 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,id
     };
       
 
-
   return (
     <div className="flex  mt-5 w-full h-[300px] bg-gray-300 bg-opacity-30 px-[180px] pt-1 justify-center">
         
