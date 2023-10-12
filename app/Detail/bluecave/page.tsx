@@ -8,6 +8,7 @@ import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import axios from "axios";
+import Link from "next/link";
 
 const request = axios.create({
   baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
@@ -131,35 +132,39 @@ export default function AttractionDetail({}){
                     Nearby Hotels
                 </div>
             </div>
-            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
+            <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]">
+                <Link target="blank" href="https://www.agoda.com/th-th/maesot-siri-hotel/hotel/tak-th.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1841722&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2023-10-13&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=THB&isFreeOccSearch=false&tag=65683183-ffc6-efe5-0bda-a9296881f1d0&isCityHaveAsq=false&tspTypes=16&los=1&searchrequestid=58211a38-7833-428f-8edc-e7f7625a480f"> 
                 <HotelCard
                     hotelname="โรงแรมแม่สอดศิริ"
                     image="../Hotel/bluecave/1.jpg"
                     star={4}
                     rating={170}
                     price="562"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.traveloka.com/th-th/hotel/thailand/shafa-resort-1000000718021">
                 <HotelCard
                     hotelname="ชาฟา รีสอร์ท"
                     image="../Hotel/bluecave/2.jpg"
                     star={4}
                     rating={163}
                     price="544"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.agoda.com/irawadee-resort/hotel/tak-th.html?cid=1844104">
                 <HotelCard
                     hotelname="อิระวดี รีสอร์ท"
                     image="../Hotel/bluecave/3.jpg"
                     star={4}
                     rating={129}
                     price="960"
-                ></HotelCard>
+                ></HotelCard></Link>
+                <Link target="blank" href="https://www.agoda.com/th-th/hop-inn-mae-sot/hotel/tak-th.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1844104&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2023-10-12&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=THB&isFreeOccSearch=false&isCityHaveAsq=false&los=2&searchrequestid=5160d757-121b-490e-adc2-54332f4b4ec1">
                 <HotelCard
                     hotelname="ฮ็อปอินน์ แม่สอด"
                     image="../Hotel/bluecave/4.jpg"
                     star={4}
                     rating={1278}
                     price="620"
-                ></HotelCard>
+                ></HotelCard></Link>
             </div>
             
         </main>
