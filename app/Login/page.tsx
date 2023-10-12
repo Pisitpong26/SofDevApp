@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React, { useState , useEffect} from 'react';
 import axios from "axios";
 import { useRouter } from 'next/navigation';
+import getToken from "@/components/getToken";
 
 const request = axios.create({
   baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
@@ -19,7 +20,13 @@ export default function UserLogin(){
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [token, setToken] = useState('');
     const router = useRouter();
+
+    useEffect(() => {
+        const fetchedToken = getToken() || '';
+        setToken(fetchedToken);
+      }, []);
 
     const handleSignIn = () => {
         const payload = {
@@ -55,7 +62,7 @@ export default function UserLogin(){
                 <div className="flex flex-col justify-center items-center " >
                     <div className="mt-20 flex flex-col items-center border-2 rounded-2xl backdrop-blur-sm w-[430px] h-[400px]">
                         <div className=" text-white text-3xl mt-10 font-bold ">Login</div>
-                        <div className="w-full max-w-xs">
+                        { !token ? (<div className="w-full max-w-xs">
                             <form className="mt-4 rounded px-3 pt-5 pb-2 mb-4">
                                 <div className="mb-3">
                                     <label className="block text-white text-sm font-bold mb-2">
@@ -107,8 +114,8 @@ export default function UserLogin(){
                                     <p className="text-center text-white text-xs">
                                     Made with ❤️ by TravelerTale Developer Team
                                     </p>
-                            </div>
-                    </div>
+                            </div>) : (<div className="font-bold text-white"> You are already login</div>)}
+                    </div> 
                 </div>
             
         </main>    

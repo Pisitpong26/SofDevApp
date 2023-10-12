@@ -16,7 +16,7 @@ const request = axios.create({
 export const Logout = (authToken: string)=>
         	request.get("http://34.124.245.31:8000/logout",{
             headers: {
-              'Authorization': `${authToken}`, // Replace 'Bearer' with the appropriate authentication scheme if needed
+              'Authorization': `${authToken}`,
             },
           });
 
