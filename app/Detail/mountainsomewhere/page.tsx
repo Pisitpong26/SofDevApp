@@ -100,6 +100,10 @@ export default function AttractionDetail({}){
             <div className="mt-10 text-black text-justify px-40 text-xl">
              สร้างไว้เป็นหน้า Template เท่านั้น ถ้าหน้านี้ยังขึ้นอยู่ แสดงว่ายังทำไม่เสร็จ
             </div>
+            <div className="flex justify-center mt-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.3862780998184!2d98.00278487780628!3d17.611256353318996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dcbbd23cd54355%3A0xac4867c4b1cece37!2z4Lih4LmI4Lit4LiZ4LiE4Lil4Li44Lii4Lir4Lil4Lin4LiH!5e1!3m2!1sen!2sth!4v1697089687776!5m2!1sen!2sth" width="600" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
 
             <Rating
                 five={20}
