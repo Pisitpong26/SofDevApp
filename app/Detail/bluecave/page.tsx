@@ -133,32 +133,32 @@ export default function AttractionDetail({}){
             </div>
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
                 <HotelCard
-                    hotelname="Hotel California"
-                    image="../Hotel/Hotelcalifornia.jpg"
+                    hotelname="โรงแรมแม่สอดศิริ"
+                    image="../Hotel/bluecave/1.jpg"
                     star={4}
-                    rating={100}
-                    price="2,699"
+                    rating={170}
+                    price="562"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="16sakuraa"
-                    image="../Hotel/catshark.png"
+                    hotelname="ชาฟา รีสอร์ท"
+                    image="../Hotel/bluecave/2.jpg"
                     star={4}
-                    rating={100}
-                    price="9,999"
+                    rating={163}
+                    price="544"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="ข้างถนน"
-                    image="../Hotel/street.jpg"
-                    star={2}
-                    rating={420}
-                    price="0"
+                    hotelname="อิระวดี รีสอร์ท"
+                    image="../Hotel/bluecave/3.jpg"
+                    star={4}
+                    rating={129}
+                    price="960"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="เต็นท์"
-                    image="../Hotel/tent.jpg"
+                    hotelname="ฮ็อปอินน์ แม่สอด"
+                    image="../Hotel/bluecave/4.jpg"
                     star={4}
-                    rating={100}
-                    price="1,499"
+                    rating={1278}
+                    price="620"
                 ></HotelCard>
             </div>
             

@@ -25,7 +25,7 @@ export default function AttractionDetail(){
             </div>
             
             <div className="mt-10 text-black text-justify px-40 text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                น้ำตกทีลอซู เป็นน้ำตกที่ตั้งอยู่ในเขตรักษาพันธุ์สัตว์ป่าอุ้มผาง อำเภออุ้มผาง จังหวัดตาก ห่างจากที่ทำการเขตฯ 3 กิโลเมตร มีลักษณะเป็นน้ำตกภูเขาหินปูนขนาดใหญ่ ตั้งอยู่บนความสูงจากระดับน้ำทะเล 900 เมตร เกิดจากลำห้วยกล้อท้อ ลำน้ำทั้งสายตกลงสู่หน้าผาสูงชัน มีน้ำไหลแรงตลอดปี ความกว้างของตัวน้ำตกประมาณ 500 เมตร ไหลลดหลั่นเป็นชั้น ๆ มีความสูงประมาณ 250 เมตร ล้อมรอบไปด้วยป่าดงดิบที่สมบูรณ์ เป็นน้ำตกที่มีขนาดใหญ่เป็นอันดับ 6 ของเอเชีย
             </div>
             <div className="flex justify-center mt-5">
                 
@@ -124,32 +124,32 @@ export default function AttractionDetail(){
             </div>
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
                 <HotelCard
-                    hotelname="Hotel California"
-                    image="../Hotel/Hotelcalifornia.jpg"
-                    star={5}
-                    rating={69}
-                    price="2,699"
-                ></HotelCard>
-                <HotelCard
-                    hotelname="16sakuraa"
-                    image="../Hotel/catshark.png"
+                    hotelname="บ้านริมธาร รีสอร์ท"
+                    image="../Hotel/thilosu/1.jpg"
                     star={4}
-                    rating={100}
-                    price="9,999"
+                    rating={10}
+                    price="650"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="ข้างถนน"
-                    image="../Hotel/street.jpg"
-                    star={2}
-                    rating={420}
-                    price="0"
-                ></HotelCard>
-                <HotelCard
-                    hotelname="เต็นท์"
-                    image="../Hotel/tent.jpg"
+                    hotelname="ทีลอซู ริเวอร์ไซด์"
+                    image="../Hotel/thilosu/2.jpg"
                     star={4}
-                    rating={100}
-                    price="1,499"
+                    rating={152}
+                    price="600"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="อุ้มผางบุรี รีสอร์ท"
+                    image="../Hotel/thilosu/3.jpg"
+                    star={4}
+                    rating={130}
+                    price="1,065"
+                ></HotelCard>
+                <HotelCard
+                    hotelname="บ้านบุปชาติรีสอร์ท"
+                    image="../Hotel/thilosu/4.jpg"
+                    star={3}
+                    rating={10}
+                    price="790"
                 ></HotelCard>
 
             </div>
