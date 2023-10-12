@@ -38,6 +38,7 @@ export default function AttractionDetail(){
                 three={2}
                 two={1}
                 one={1}
+                id='bf7ab9a8-79ad-470b-a7b6-0c8874116384'
             ></Rating>
             <div className="flex flex-col justify-center items-center h-full bg-gray-300 bg-opacity-30">
                 <div className="text-4xl font-bold text-blue">

@@ -98,6 +98,7 @@ export default function AttractionDetail({}){
                 three={3}
                 two={5}
                 one={20}
+                id="70c5814e-329f-4869-83f0-49bb8d0b08eb"
             ></Rating>
             
             

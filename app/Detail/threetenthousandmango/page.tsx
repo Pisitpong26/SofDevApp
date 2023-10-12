@@ -112,7 +112,7 @@ export default function AttractionDetail({}){
                 three={3}
                 two={5}
                 one={20}
-                // onReviewSubmit={handleReviewSubmit}
+                id="46f6980b-3880-48e1-ae51-764348fd7469"
             ></Rating>
             
             

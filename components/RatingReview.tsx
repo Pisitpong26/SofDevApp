@@ -13,12 +13,12 @@ const request = axios.create({
 
 
 
-type AddAttractionReviewRequestBody = {attractionId: string; detail: string; rating: number; } 
+type payload = {attractionId: string; detail: string; rating: number; } 
 
-export const AddAttractionReview = (data: AddAttractionReviewRequestBody, authToken: string) =>
-  request.post("http://34.124.245.31/attraction/addReview", data, {
+export const AddAttractionReview = (data: payload, authToken: string) =>
+  request.post("http://34.124.245.31:8000/attraction/addReview", data, {
     headers: {
-      authorization: `${authToken}`, // Replace 'Bearer' with the appropriate authentication scheme if needed
+      'Authorization': `${authToken}`, // Replace 'Bearer' with the appropriate authentication scheme if needed
     },
   });
 
@@ -31,6 +31,7 @@ interface RatingReview {
     three: number;
     two: number;
     one: number;
+    id: string;
     fiveW: number;
     fourW: number;
     threeW: number;
@@ -44,7 +45,7 @@ export interface Review {
   content: string;
 }
 
-export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) => {
+export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,id}) => {
 
     const [rating, setRating] = useState(0)
     const totalReview=five+four+three+two+one;
@@ -114,17 +115,10 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) 
       alert("Please select a rating before submitting your review.");
       return; 
     }
-
-    // Create a new review object
-    // const newReview = {
-    //   username: 'Anonymous',
-    //   star: rating,
-    //   content: trimmedContent,
-    // };
-
-    const authToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5MTc2NmI5OS1kOTI2LTRiZTgtYTYwMy00ZDFmYzBiNmVjMGIiLCJ1c2VybmFtZSI6InVzZXI1IiwiaWF0IjoxNjk2NjYyNDc5LCJleHAiOjE2OTY2Njk2Nzl9.uo57jsFWTerjRqf1ocvwVbfTl8HK6xo3yQUsRvPVbbc';
+    const idAt = id.toString();
+    const authToken = getToken() || '';
     const newReview = {
-      attractionId: 'any',
+      attractionId: idAt,
       detail: trimmedContent,
       rating: rating,
     }
@@ -135,6 +129,8 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one}) 
       })
       .catch((error) => {
     // Handle errors
+          console.log(newReview)
+          console.log(authToken)
           console.error('Error adding review:', error);
        });
     };
