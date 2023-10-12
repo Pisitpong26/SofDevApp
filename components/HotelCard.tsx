@@ -14,7 +14,7 @@ export const HotelCard: React.FC<HotelCard> = ({ hotelname,star,image,rating,pri
   return (
     <div className="flex flex-col border-2 w-[300px] h-[200px] bg-white shadow-xl rounded-md">
                     <div className="flex flex-row">
-                        <div className="flex flex-col w-[150px] ">
+                        <div className="flex flex-col w-[270px]">
                             <div className="pt-3 pl-4 font-bold text-blue text-lg">{hotelname}</div>
                             <img src={image} alt="hotelImage" className="h-[130px] w-[130px] rounded-md ml-4 mt-3"></img>
                         </div>

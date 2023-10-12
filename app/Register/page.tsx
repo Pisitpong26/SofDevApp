@@ -82,6 +82,7 @@ export default function RegisterUser(){
               })
               .catch((error) => {
             // Handle errors
+                 alert("Username already taken")
                   console.error('Register Error:', error);
                });
         

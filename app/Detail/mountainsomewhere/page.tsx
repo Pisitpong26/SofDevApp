@@ -98,7 +98,7 @@ export default function AttractionDetail({}){
             </div>
 
             <div className="mt-10 text-black text-justify px-40 text-xl">
-             สร้างไว้เป็นหน้า Template เท่านั้น ถ้าหน้านี้ยังขึ้นอยู่ แสดงว่ายังทำไม่เสร็จ
+            ตั้งอยู่ที่ อ.ท่าสองยาง จังหวัดตาก และดอยทูเลเป็นยอดเขาที่สูงที่สุดในอ.ท่าสองยาง และ เป็นเขาที่สูงติดอันดับที่ 10 ของประเทศไทยอีกด้วย เสน่ห์ของการมาเที่ยวที่นี่คือเส้นทางการเดินป่า3 วัน และทะเลหมอกที่ไหล สลับกับภูเขา หลายสิบลูกไกลสุดลูกหูลูกตา ที่ความสูงจากระดับน้ำทะเล 1,350 เมตร
             </div>
             <div className="flex justify-center mt-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.3862780998184!2d98.00278487780628!3d17.611256353318996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dcbbd23cd54355%3A0xac4867c4b1cece37!2z4Lih4LmI4Lit4LiZ4LiE4Lil4Li44Lii4Lir4Lil4Lin4LiH!5e1!3m2!1sen!2sth!4v1697089687776!5m2!1sen!2sth" width="600" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -147,32 +147,25 @@ export default function AttractionDetail({}){
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
 
                 <HotelCard
-                    hotelname="Hotel California"
-                    image="../Hotel/Hotelcalifornia.jpg"
-                    star={4}
-                    rating={100}
-                    price="2,699"
+                    hotelname="Ozone โฮมสเตย์"
+                    image="../Hotel/mountain/1.jpg"
+                    star={5}
+                    rating={68}
+                    price="725"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="16sakuraa"
-                    image="../Hotel/catshark.png"
-                    star={4}
-                    rating={100}
-                    price="9,999"
+                    hotelname="วงศ์ตะวัน รีสอร์ท"
+                    image="../Hotel/mountain/3.jpg"
+                    star={5}
+                    rating={17}
+                    price="500"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="ข้างถนน"
-                    image="../Hotel/street.jpg"
-                    star={2}
-                    rating={420}
-                    price="0"
-                ></HotelCard>
-                <HotelCard
-                    hotelname="เต็นท์"
-                    image="../Hotel/tent.jpg"
+                    hotelname="ท่าสองยางฮิลล์ รีสอร์ท"
+                    image="../Hotel/mountain/2.jpg"
                     star={4}
-                    rating={100}
-                    price="1,499"
+                    rating={82}
+                    price="585"
                 ></HotelCard>
 
             </div>

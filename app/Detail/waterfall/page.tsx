@@ -86,7 +86,7 @@ export default function AttractionDetail({}){
             </div>
 
             <div className="mt-10 text-black text-justify px-40 text-xl">
-             สร้างไว้เป็นหน้า Template เท่านั้น ถ้าหน้านี้ยังขึ้นอยู่ แสดงว่ายังทำไม่เสร็จ
+            น้ำตกลานสาง อยู่ใน ตำบลแม่ท้อ อำเภอเมืองตาก จังหวัดตาก บริเวณตอนบนของห้วยลานสาง ซึ่งอยู่ถัดจากน้ำตกลานเลี้ยงม้าขึ้นไปอีก ซึ่งเป็นน้ำตกที่มีความสวยงดงามมาก สูงประมาณ 40 เมตร โดยสายน้ำตกจะไหลผ่านซอกเขา แล้วไหลลดหลั่นลงมากว่า 3 ชั้นด้วยกัน ก่อนจะไหลลงสู่แอ่งน้ำตกลานเลี้ยงม้าไปอีกทีนั่นเองค่ะ
             </div>
             <div className="flex justify-center mt-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.3685668047406!2d99.0004493747523!3d16.777297720094634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dddccb50cb1d27%3A0xac0d20fda3704ee4!2z4LiZ4LmJ4Liz4LiV4LiB4Lil4Liy4LiZ4Liq4Liy4LiH!5e1!3m2!1sen!2sth!4v1697089651415!5m2!1sen!2sth" width="600" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -135,32 +135,32 @@ export default function AttractionDetail({}){
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
 
                 <HotelCard
-                    hotelname="Hotel California"
-                    image="../Hotel/Hotelcalifornia.jpg"
+                    hotelname="โรงแรมสวนสิน การ์เด้น"
+                    image="../Hotel/waterfall/1.jpg"
                     star={4}
-                    rating={100}
-                    price="2,699"
+                    rating={485}
+                    price="514"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="16sakuraa"
-                    image="../Hotel/catshark.png"
+                    hotelname="Tak Andaman Hotel"
+                    image="../Hotel/waterfall/2.jpg"
                     star={4}
-                    rating={100}
-                    price="9,999"
+                    rating={246}
+                    price="825"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="ข้างถนน"
-                    image="../Hotel/street.jpg"
-                    star={2}
-                    rating={420}
-                    price="0"
+                    hotelname="บ้านไร่เชิญมา รีสอร์ท"
+                    image="../Hotel/waterfall/3.jpg"
+                    star={4}
+                    rating={331}
+                    price="384"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="เต็นท์"
-                    image="../Hotel/tent.jpg"
+                    hotelname="เวียงตากริเวอร์ไซด์"
+                    image="../Hotel/waterfall/4.jpg"
                     star={4}
-                    rating={100}
-                    price="1,499"
+                    rating={1218}
+                    price="1,000"
                 ></HotelCard>
 
             </div>
