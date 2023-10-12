@@ -173,25 +173,22 @@ export default function Attraction() {
       </Swiper>
       </div>
       </div>
-      <div className="container-slider justify-center ml-12">
+      <div className="container-slider justify-center">
       <h4><span>ประวัติศาสตร์</span></h4>
       <br/>
+      <div className="ml-12 mr-12">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 450,
-          depth: 0,
-          modifier: 2.5,
-          slideShadows: true,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
         }}
-        
-        // pagination={true}
-        // modules={[EffectCoverflow]}
         modules={[EffectCoverflow]}
         className="mySwiper"
       >
@@ -210,26 +207,39 @@ export default function Attraction() {
         <SwiperSlide>
         <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/10.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
-      </Swiper>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/11.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/12.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/13.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/14.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/15.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+      </Swiper></div>
       </div>
-      <div className="container-slider justify-center ml-12">
+      <div className="container-slider justify-center">
       <h4><span>ทำกิจกรรม</span></h4>
       <br/>
+      <div className="ml-12 mr-12">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 450,
-          depth: 0,
-          modifier: 2.5,
-          slideShadows: true,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
         }}
-        
-        pagination={true}
         modules={[EffectCoverflow]}
         className="mySwiper"
       >
@@ -248,26 +258,39 @@ export default function Attraction() {
         <SwiperSlide>
         <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/15.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
-      </Swiper>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/16.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/17.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/18.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/19.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/20.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+      </Swiper></div>
       </div>
-      <div className="container-slider justify-center ml-12">
+      <div className="container-slider justify-center">
       <h4><span>คาเฟ่</span></h4>
       <br/>
+      <div className="ml-12 mr-12">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 450,
-          depth: 0,
-          modifier: 2.5,
-          slideShadows: true,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
         }}
-        
-        pagination={true}
         modules={[EffectCoverflow]}
         className="mySwiper"
       >
@@ -286,26 +309,39 @@ export default function Attraction() {
         <SwiperSlide>
         <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/20.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
-      </Swiper>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/21.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/22.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/23.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/24.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/25.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+      </Swiper></div>
       </div>
-      <div className="container-slider justify-center ml-12">
+      <div className="container-slider justify-center">
       <h4><span>อื่นๆ</span></h4>
       <br/>
+      <div className="ml-12 mr-12">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
-          stretch: 450,
-          depth: 0,
-          modifier: 2.5,
-          slideShadows: true,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
         }}
-        
-        pagination={true}
         modules={[EffectCoverflow]}
         className="mySwiper"
       >
@@ -324,7 +360,22 @@ export default function Attraction() {
         <SwiperSlide>
         <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/25.png" width={300} height={450} alt="Picture of the author"/>
         </SwiperSlide>
-      </Swiper>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/2.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/3.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/4.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image className="rounded-[20px] w-[325px] h-[250px]" src="/PicSlider/5.png" width={300} height={450} alt="Picture of the author"/>
+        </SwiperSlide>
+      </Swiper></div>
       </div>
 
 
