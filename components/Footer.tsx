@@ -13,6 +13,7 @@ class Footer extends Component {
             <h1 className='text-cyan-600 text-3xl font-bold'>About us</h1>
             <h1 className='text-cyan-600 text-xl font-bold'>Project for PRINCIPLES OF SOFTWARE DEVELOPMENT PROCESS</h1>
             <h1 className='text-cyan-600 text-xl font-bold'>SUBMITTED BY</h1>
+            <h1 className='text-cyan-600 text-xl font-bold'>Our Team</h1>
           </div>
           <h1 className='text-cyan-700 text-center text-6xl font-bold'>TravelerTale</h1>
 
