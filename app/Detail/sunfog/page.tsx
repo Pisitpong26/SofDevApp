@@ -99,7 +99,7 @@ export default function AttractionDetail({}){
             
 
             <div className="mt-10 text-black text-justify px-40 text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            ชาวเขาใช้พื้นที่เกษตรเปิดสถานที่ท่องเที่ยวแห่งใหม่ “ม่อนหมอกตะวัน” อยู่ยอดดอยบ้านป่าหวาย โดยนายสุเมธ ศรีธีระวัฒน์ ผู้ใหญ่บ้านป่าหวย หมู่ที่ 3 ตำบลคีรีราษฎร์ อ.พบพระ จังหวัดตาก ได้ วางระบบ และระเบียบในการต้อนรับนักท่องเที่ยว เพื่อให้มีระบบการจัดการที่ถูกต้อง และเรียบร้อย เช่น สถานที่จอดรถยนต์ รถจักรยานยนต์ การทิ้งขยะ จัดการเส้นทางจราจร และบริหารจัดการพื้นที่ให้กับนักท่องเที่ยว โดยพิจารณาในด้านความปลอดภัย ความสะดวก และการรักษาสิ่งแวดล้อม ซึ่งพื้นที่ดังกล่าว เป็นของราษฎรในหมู่บ้านที่ครอบครองมานาน มีพื้นที่ทั้งหมด 50 ไร่ อยู่บนยอดเขา มีความสูง1,100 เมตร เต็มไปด้วยทะเลหมอกที่สวยงามในช่วงเช้า ชมพระอาทิตย์ขึ้น และพระอาทิตย์ตกยามเย็น สภาพอากาศมีลมพัดเย็นสบาย แต่ในฤดูหนาวจะหนาวเย็นมาก หรือ แม้แต่ปัจจุบัน ก็มีนักท่องเที่ยวในพื้นที่ และนักท่องเที่ยวจากต่างจังหวัดไปกางพักนอนค้างคืนกัน  ซึ่งชาวเขาอย่างพวกเราได้ช่วยกันพัฒนาแหล่งท่องเที่ยวแห่งนี้ ด้วยสถานที่พัก การบริการเต้นท์ บริการอาหารเครื่องดื่ม อย่างเช่น หมูกระทะ ปลาเผา ฯลฯ
             </div>
             <div className="flex justify-center mt-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1240833730985!2d98.82268737474831!3d16.57543082568861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dd93ef27158881%3A0x8d35dd14345963fd!2z4Lih4LmI4Lit4LiZ4Lir4Lih4Lit4LiB4LiV4Liw4Lin4Lix4LiZ!5e1!3m2!1sen!2sth!4v1697019621073!5m2!1sen!2sth"width="600" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>   
@@ -146,33 +146,27 @@ export default function AttractionDetail({}){
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 justify-center gap-[30px]"> 
 
                 <HotelCard
-                    hotelname="Hotel California"
-                    image="../Hotel/Hotelcalifornia.jpg"
-                    star={4}
-                    rating={100}
-                    price="2,699"
+                    hotelname="บ้านทิวเขาดอยป่าหวาย"
+                    image="../Hotel/sunfog/1.jpg"
+                    star={5}
+                    rating={34}
+                    price="1,500"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="16sakuraa"
-                    image="../Hotel/catshark.png"
-                    star={4}
-                    rating={100}
-                    price="9,999"
+                    hotelname="ฮักเขาแคมป์ปิ้ง"
+                    image="../Hotel/sunfog/2.jpg"
+                    star={5}
+                    rating={6}
+                    price="1,100"
                 ></HotelCard>
                 <HotelCard
-                    hotelname="ข้างถนน"
-                    image="../Hotel/street.jpg"
-                    star={2}
-                    rating={420}
-                    price="0"
+                    hotelname="โฮมสเตย์ ดอยป่าหวาย"
+                    image="../Hotel/sunfog/3.jpg"
+                    star={5}
+                    rating={6}
+                    price="1,200"
                 ></HotelCard>
-                <HotelCard
-                    hotelname="เต็นท์"
-                    image="../Hotel/tent.jpg"
-                    star={4}
-                    rating={100}
-                    price="1,499"
-                ></HotelCard>
+
 
             </div>
 
