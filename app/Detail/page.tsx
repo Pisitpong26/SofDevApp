@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
 import {ReviewCard} from "@/components/ReviewCard";
-// import map from "@/components/map";
 import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
