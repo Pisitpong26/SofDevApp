@@ -7,6 +7,18 @@ import Login from '@/app/Login/page';
 import getToken from './getToken';
 import getUsername from './getUsername';
 import { useRouter } from 'next/navigation';
+import axios from 'axios';
+
+const request = axios.create({
+  baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
+});
+
+export const Logout = (authToken: string)=>
+        	request.get("http://34.124.245.31:8000/logout",{
+            headers: {
+              'Authorization': `${authToken}`, // Replace 'Bearer' with the appropriate authentication scheme if needed
+            },
+          });
 
 const Navbar = () => {
   const [token, setToken] = useState('');
@@ -24,6 +36,19 @@ const Navbar = () => {
     localStorage.removeItem("token");
     console.log("successfully logout and clear token")
     router.push('/Login');
+
+    Logout(token)
+        .then((response) => {
+            // Handle the response
+                  console.log('Logout successfully:', response.data);
+                  router.push('/Login');;
+                  
+              })
+              .catch((error) => {
+            // Handle errors
+                  console.error('Error Login:', error);
+                  alert("Incorrect Username or Password");
+               });
   };
 
   return <div className="w-full h-20 lg:h-28 text-white opacity-100" >
