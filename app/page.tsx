@@ -103,16 +103,16 @@ export default function Home() {
           </div>
       </div>
 
-      <div className="w-[1400px] h-[400px] ml-28 flex flex-row justify-center items-center">
+      <div className="w-[1300px] h-[400px] ml-28 flex flex-row justify-center items-center">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={2}
+        slidesPerView={'auto'}
         coverflowEffect={{
           rotate: 0,
-          stretch: 410,
+          stretch: 400,
           depth: 0,
           modifier: 2.5,
         }}
@@ -125,31 +125,49 @@ export default function Home() {
       >
         <SwiperSlide>
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/1.png" width={300} height={450} alt="Picture of the author"/>
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/1.png" width={300} height={450} alt="Picture of the author"/>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
         <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/2.png" width={400} height={300} alt="Picture of the author"/>
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/2.png" width={400} height={300} alt="Picture of the author"/>
         </div>
         </SwiperSlide>
           
         <SwiperSlide>
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/3.png" width={400} height={300} alt="Picture of the author"/> 
+          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/3.png" width={400} height={300} alt="Picture of the author"/> 
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/4.png" width={400} height={300} alt="Picture of the author"/> 
+          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Cafe/1.png" width={400} height={300} alt="Picture of the author"/> 
           </div>
         </SwiperSlide>
 
         <SwiperSlide> 
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/5.png" width={400} height={300} alt="Picture of the author"/> 
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Cafe/2.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Cafe/3.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/1.png" width={400} height={300} alt="Picture of the author"/> 
+          </div>  
+        </SwiperSlide>
+
+        <SwiperSlide> 
+          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+            <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/History/2.jpg" width={400} height={300} alt="Picture of the author"/> 
           </div>  
         </SwiperSlide>
         
