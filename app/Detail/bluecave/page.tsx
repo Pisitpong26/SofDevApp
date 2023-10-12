@@ -95,7 +95,7 @@ export default function AttractionDetail({}){
             ถ้ำสีฟ้า ตั้งอยู่ภายใน สำนักสงฆ์พุทธคยาถ้ำสีฟ้า ตำบลแม่กุ อำเภอแม่สอด จังหวัดตาก มีลักษณะเป็นถ้ำหินขนาดกว้างใหญ่ แต่ความไม่ธรรมดาคือ เป็น ถ้ำที่มีหินสีฟ้า และเนื้อหินยังมีลวดลายสวยงามมากๆ อีกด้วยค่ะ ภายในถ้ำก็จะเต็มไปด้วยหินงอกหินย้อย<br/><br/>บริเวณโถงถ้ำด้านหน้า จะมีพระพุทธรูปนอนในศิลปะแบบเมียนม่า ให้เราได้กราบสักการะกันก่อนเข้าถ้ำอีกด้วยนะคะ ส่วนหินบริเวณปากถ้ำก็สวยไม่แพ้ในถ้ำเลย เพียงแค่หน้าปากถ้ำจะไม่ได้เป็นสีฟ้าทั้งหมดเท่านั้นค่ะ มีแทรกสีฟ้าบ้างนิดหน่อย พอให้เป็นน้ำจิ้มก่อนจะเข้าไปชมผนังถ้ำกันที่ด้านในค่ะ<br/><br/>ภายใน ถ้ำสีฟ้า ก็จะมีพระพุทธรูปและสิ่งศักดิ์สิทธิ์ต่างๆ ให้ได้เข้าไปสักการะกราบไหว้กันค่ะ และจะมีในส่วนของซอกหิน ช่องเล็กช่องน้อยต่างๆ สลับซับซ้อนกันไปมา โดยเราจะสามารถเดินเที่ยวชมรอบๆ ถ้ำได้เลยค่ะ เพราะจะมีทางเดินยาวไปตามทางอย่างดีเลย ที่เราเห็นผนังเป็นสีฟ้านั้น ก็เพราะเกิดจากการเปลี่ยนแปลงของสสารในพื้นผนัง ทำให้กลายเป็นผนังสีสวยแบบนี้ค่ะ
             </div>
             <div className="flex justify-center mt-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.6252404782244!2d98.70992847474885!3d16.602382024945445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dd910d53d948f3%3A0xe5fd908344354ce3!2sBlue%20Cave!5e1!3m2!1sen!2sth!4v1697020062553!5m2!1sen!2sth" width="600" height="450" style={{ border: '0' }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.6252404782244!2d98.70992847474885!3d16.602382024945445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dd910d53d948f3%3A0xe5fd908344354ce3!2sBlue%20Cave!5e1!3m2!1sen!2sth!4v1697020062553!5m2!1sen!2sth" width="1000" height="450" style={{ border: '0' }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 
             </div>
             
@@ -175,48 +175,3 @@ export default function AttractionDetail({}){
         </main>
     )
 }
-
-
-{/* <div className="mt-3 w-[50px] h-[33px] bg-yellow-300 rounded-tl-md rounded-br-md font-bold text-2xl text-white text-center inset-y-0 right-4 absolute">
-                                4.0
-                            </div>
-                            <div cl */}
-
-
-
-                            {/* <SwiperSlide><ReviewCard
-                    username="16sakuraa"
-                    star={4}
-                    content="ผมลองมาเล่นบอลตามพี่คนนี้ดู แกคัดบอลแม่นดี บอลสเต็ปแตกบ่อยมากครับ #กำไรเต็มคาราเบล #มีแจกแนวทางหน้าเฟสฟรีทุกวัน ลองกดติดตามดู Suppaphol Areewattanawong"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="Kanom"
-                    star={5}
-                    content="สวยขนาดนี้ไม่มาไหวอ่อ"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="Apple"
-                    star={5}
-                    content="ถ้ำสวยมาก มีที่ให้ถ่ายรูปเยอะเลย รีบไปตอนคนยังไม่เยอะนะ เพราะที่จอดรถน้อย  "
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="มารายแครี่"
-                    star={4}
-                    content="ชอบบรรยากาศแห่งการได้ร่ำเมรัย ร่วมวงกับเพื่อนรู้ใจจะหาสุขใดไม่มีเปรียบปราน"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="เกิดมาเพื่อเกรียน"
-                    star={1}
-                    content="กาก"
-                
-                ></ReviewCard></SwiperSlide>
-                <SwiperSlide><ReviewCard
-                    username="โอ๊ต"
-                    star={3}
-                    content="โอ้ยคิดไม่ออกไม่รู้จะเขียนอะไร"
-                
-                ></ReviewCard></SwiperSlide> */}

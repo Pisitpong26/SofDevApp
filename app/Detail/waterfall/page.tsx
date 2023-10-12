@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import AttractImage from "@/components/AttractImage";
 import Rating from "@/components/RatingReview";
 import {ReviewCard} from "@/components/ReviewCard";
-// import map from "@/components/map";
 import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -92,7 +91,7 @@ export default function AttractionDetail({}){
             น้ำตกลานสาง อยู่ใน ตำบลแม่ท้อ อำเภอเมืองตาก จังหวัดตาก บริเวณตอนบนของห้วยลานสาง ซึ่งอยู่ถัดจากน้ำตกลานเลี้ยงม้าขึ้นไปอีก ซึ่งเป็นน้ำตกที่มีความสวยงดงามมาก สูงประมาณ 40 เมตร โดยสายน้ำตกจะไหลผ่านซอกเขา แล้วไหลลดหลั่นลงมากว่า 3 ชั้นด้วยกัน ก่อนจะไหลลงสู่แอ่งน้ำตกลานเลี้ยงม้าไปอีกทีนั่นเองค่ะ
             </div>
             <div className="flex justify-center mt-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.3685668047406!2d99.0004493747523!3d16.777297720094634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dddccb50cb1d27%3A0xac0d20fda3704ee4!2z4LiZ4LmJ4Liz4LiV4LiB4Lil4Liy4LiZ4Liq4Liy4LiH!5e1!3m2!1sen!2sth!4v1697089651415!5m2!1sen!2sth" width="600" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.3685668047406!2d99.0004493747523!3d16.777297720094634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dddccb50cb1d27%3A0xac0d20fda3704ee4!2z4LiZ4LmJ4Liz4LiV4LiB4Lil4Liy4LiZ4Liq4Liy4LiH!5e1!3m2!1sen!2sth!4v1697089651415!5m2!1sen!2sth" width="1000" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
 
             </div>

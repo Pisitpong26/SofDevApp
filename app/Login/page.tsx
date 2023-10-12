@@ -94,17 +94,17 @@ export default function UserLogin(){
                                     onChange={(e) => setPassword(e.target.value)}
                                     />
                                 </div>
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-center">
                                 <button
                                 onClick={handleSignIn}
-                                className="hover:scale-110 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                className="hover:scale-110 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded focus:outline-none focus:shadow-outline"
                                 type="button"
                                 >
                                 Sign In
                                 </button>
-                                <a className="hover:scale-110 inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 text-white px-4" href="#">
+                                {/* <a className="hover:scale-110 inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 text-white px-4" href="#">
                                     Forgot Password?
-                                </a>
+                                </a> */}
                                 </div>
                                 <div className="mt-3 flex items-center justify-center">
                                     <a className="hover:scale-110 inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 text-white" href="#">

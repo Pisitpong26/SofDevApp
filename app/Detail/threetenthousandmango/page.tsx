@@ -97,7 +97,7 @@ export default function AttractionDetail({}){
 
             <div className="flex justify-center mt-5">
                 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7145.526921452637!2d98.60604124992518!3d15.877729059859867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e70f4bc767965b%3A0x596a5e52dc9acb2e!2sMa%20Muang%20Sam%20Muen%20trail!5e1!3m2!1sen!2sth!4v1697019489030!5m2!1sen!2sth"width="600" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7145.526921452637!2d98.60604124992518!3d15.877729059859867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e70f4bc767965b%3A0x596a5e52dc9acb2e!2sMa%20Muang%20Sam%20Muen%20trail!5e1!3m2!1sen!2sth!4v1697019489030!5m2!1sen!2sth"width="1000" height="450" style={{border:'0'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <Rating
