@@ -125,6 +125,7 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,id
     AddAttractionReview(newReview, authToken)
       .then((response) => {
     // Handle the response
+        alert("Review added successfully")
           console.log('Review added successfully:', response.data);
       })
       .catch((error) => {
