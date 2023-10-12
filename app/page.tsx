@@ -124,9 +124,11 @@ export default function Home() {
         className="mySwiper"
       >
         <SwiperSlide>
+        <Link href="/Detail/thilosu">
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
             <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/1.png" width={300} height={450} alt="Picture of the author"/>
           </div>
+        </Link>  
         </SwiperSlide>
 
         <SwiperSlide>
@@ -141,11 +143,15 @@ export default function Home() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
-          <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/4.png" width={400} height={300} alt="Picture of the author"/> 
-          </div>
-        </SwiperSlide>
+        
+          <SwiperSlide>
+            <Link href="/Detail/bluecave">
+              <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
+                <Image className="rounded-t-[20px] w-[275px] h-[250px]" src="/PicSlider/Nature/4.png" width={400} height={300} alt="Picture of the author"/> 
+              </div>
+            </Link>
+          </SwiperSlide>
+        
 
         <SwiperSlide>
           <div className="w-[275px] h-[450px] rounded-[20px] bg-white shadow-xl flex flex-row justify-start  items-start ">
