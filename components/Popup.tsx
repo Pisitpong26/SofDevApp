@@ -25,7 +25,7 @@ const generateStars = (star: number) => {
   
 export const Popup: React.FC<PopupProps> = ({ username, star, content,onClose }) => {
     return(
-        <div className="fixed inset-0 flex items-center justify-center z-50">
+        <div className="fixed inset-0 flex items-center justify-center z-50 w-full h-full bg-black bg-opacity-60">
             <div className="flex flex-col w-[600px] h-[400px] border-2 bg-white bg-opacity-100 rounded-lg shadow-md ">
                 <div className="flex flex-row pt-3 pl-5 text-3xl font-bold">
                     {username}
