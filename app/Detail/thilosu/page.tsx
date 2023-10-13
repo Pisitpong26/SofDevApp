@@ -10,6 +10,7 @@ import 'swiper/css';
 import Link from "next/link";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Popup from "@/components/Popup";
 const request = axios.create({
   baseURL: "http://34.124.245.31:8000" 
 });
@@ -69,6 +70,20 @@ export default function AttractionDetail(){
                 break;
         }
     });
+
+    const [popupData, setPopupData] = useState<{
+        username: string;
+        star: number;
+        content: string;
+      } | null>(null);
+
+    const handleSeeMoreClick = (username: string, star: number, content: string) => {
+        setPopupData({ username, star, content });
+      };
+    
+      const handleClosePopup = () => {
+        setPopupData(null);
+      };
     return(
         
         <main>
@@ -109,7 +124,14 @@ export default function AttractionDetail(){
                     Swipe to See More
                 </div>
             </div>
-
+            {popupData && (
+                    <Popup
+                    username={popupData.username}
+                    star={popupData.star}
+                    content={popupData.content}
+                    onClose={handleClosePopup}
+                    />
+                )}
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 "> 
                 <Swiper
                     spaceBetween={10}
@@ -119,7 +141,18 @@ export default function AttractionDetail(){
                 >
                 {attractionReview.map((attractionReview, index) => (
                         <SwiperSlide key={index}>
-                            <ReviewCard username={attractionReview.user.username} star={attractionReview.rating} content={attractionReview.detail} />
+                            <ReviewCard 
+                            username={attractionReview.user.username} 
+                            star={attractionReview.rating} 
+                            content={attractionReview.detail}
+                            onSeeMoreClick={() =>
+                                handleSeeMoreClick(
+                                  attractionReview.user.username,
+                                  attractionReview.rating,
+                                  attractionReview.detail
+                                )
+                              }
+                            />
                         </SwiperSlide>
                         ))}
                 </Swiper>

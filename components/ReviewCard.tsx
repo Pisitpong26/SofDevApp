@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import Popup from '@/components/Popup';
 
 interface ReviewCardProps {
     username: string;
     star: number;
     content: string;
+    onSeeMoreClick: () => void;
 }
 
 const generateStars = (star: number) => {
@@ -24,11 +26,12 @@ const starSVG = (
 );
 
 
-export const ReviewCard: React.FC<ReviewCardProps> = ({ username, star, content }) => {
+export const ReviewCard: React.FC<ReviewCardProps> = ({ username, star, content,onSeeMoreClick}) => {
     const [expanded, setExpanded] = useState(false);
 
     const toggleExpand = () => {
         setExpanded(!expanded);
+  
     };
 
     const displayContent = expanded ? content : content.slice(0, 130);
@@ -48,7 +51,7 @@ export const ReviewCard: React.FC<ReviewCardProps> = ({ username, star, content 
             </div>
             <div className="text-right pr-5">
             {content.length > 130 && !expanded && (
-                    <button className="text-blue-500 font-bold" onClick={toggleExpand}>
+                    <button className="text-blue-500 font-bold" onClick={onSeeMoreClick}>
                         See more
                     </button>
                 )}

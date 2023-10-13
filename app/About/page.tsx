@@ -8,8 +8,8 @@ export default function About(){
     const [isMeowing, setIsMeowing] = useState(false);
 
   const handleMeowButtonClick = () => {
-    alert("Meow!!!!")
     setIsMeowing(true);
+    alert("Meow!!!!")
   };
     return(
         <main className="bg-gray-100 bg-opacity-50">
