@@ -15,7 +15,7 @@ const request = axios.create({
 
 type payload = {attractionId: string; detail: string; rating: number; } 
 
-export const AddAttractionReview = (data: payload, authToken: string) =>
+const AddAttractionReview = (data: payload, authToken: string) =>
   request.post("http://34.124.245.31:8000/attraction/addReview", data, {
     headers: {
       'Authorization': `${authToken}`, // Replace 'Bearer' with the appropriate authentication scheme if needed
@@ -204,7 +204,7 @@ export const RatingReview: React.FC<RatingReview> = ({five,four,three,two,one,id
                           <div className="flex-row">
                             <div className="flex px-3 mb-2 mt-2 w-full">
                               <textarea
-                                className="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-[370px] h-[200px] py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"
+                                className="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-[370px] h-[230px] py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"
                                 name="body"
                                 placeholder="เขียนรีวิวที่นี่..."
                                 required

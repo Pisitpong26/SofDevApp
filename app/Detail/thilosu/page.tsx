@@ -15,7 +15,7 @@ const request = axios.create({
   baseURL: "http://34.124.245.31:8000" 
 });
 
-export const GetAllAttraction = ()=>
+const GetAllAttraction = ()=>
         	request.get("http://34.124.245.31:8000/attraction" )
 
 export default function AttractionDetail(){

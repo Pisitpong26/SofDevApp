@@ -116,18 +116,7 @@ export default function AttractionDetail({}){
                 </div>
             </div>
             <div className="flex flex-row w-full h-[300px] bg-gray-300 bg-opacity-30 pt-7 "> 
-                <Swiper
-                        spaceBetween={10}
-                        slidesPerView={4}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
-                    >
-                        {reviews.map((review, index) => (
-                        <SwiperSlide key={index}>
-                            <ReviewCard username={review.username} star={review.star} content={review.content} />
-                        </SwiperSlide>
-                        ))}
-                    </Swiper>
+                
     
             </div>
 

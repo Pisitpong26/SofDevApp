@@ -7,7 +7,7 @@ import ReviewCard from "@/components/ReviewCard"
 import HotelCard from "@/components/HotelCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import axios from "axios";
+import axios , { AxiosResponse } from "axios";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Popup from '@/components/Popup';
@@ -16,32 +16,59 @@ const request = axios.create({
   baseURL: "http://34.124.245.31:8000"  // This should be the backend server's IP and port
 });
 
-export const GetAllAttraction = ()=>
-        	request.get("http://34.124.245.31:8000/attraction" )
+// export const GetAllAttraction = ()=>
+//         	request.get("http://34.124.245.31:8000/attraction" )
+
+const GetAllAttraction = (): Promise<AxiosResponse<any>> => {
+        return request.get("http://34.124.245.31:8000/attraction");
+};
 
 
-export default function AttractionDetail({}){
+function AttractionDetail({}){
     const [attractionReview, setAttractionReview] = useState<any[]>([]);
+    // useEffect(() => {
+    //     GetAllAttraction()
+    //     .then((response) => {
+    //         const attractions = response.data[0].attractions;
+    //         if (attractions && attractions.length > 0) {
+    //             const AttractionName = attractions[3].name;
+    //             const AttractionReview = attractions[3].reviews;
+    //             setAttractionReview(AttractionReview);
+    //             console.log('Attraction Name:', AttractionName);
+    //             console.log('Reviews',AttractionReview)
+    //           } else {
+    //             console.log('No attractions found.');
+    //         }
+    //     })
+    //     .catch((error) => {
+    //         // Handle errors
+    //         console.error('Error getting attractions:', error);
+    //         alert('Error reading value');
+    //       });
+    // }, []);
     useEffect(() => {
-        GetAllAttraction()
-        .then((response) => {
+        const fetchAttractions = async () => {
+          try {
+            const response = await GetAllAttraction();
             const attractions = response.data[0].attractions;
             if (attractions && attractions.length > 0) {
-                const AttractionName = attractions[3].name;
-                const AttractionReview = attractions[3].reviews;
-                setAttractionReview(AttractionReview);
-                console.log('Attraction Name:', AttractionName);
-                console.log('Reviews',AttractionReview)
-              } else {
-                console.log('No attractions found.');
+              const AttractionName = attractions[3].name;
+              const AttractionReview = attractions[3].reviews;
+              setAttractionReview(AttractionReview);
+              console.log('Attraction Name:', AttractionName);
+              console.log('Reviews', AttractionReview);
+            } else {
+              console.log('No attractions found.');
             }
-        })
-        .catch((error) => {
-            // Handle errors
+          } catch (error) {
             console.error('Error getting attractions:', error);
             alert('Error reading value');
-          });
-    }, []);
+          }
+        };
+      
+        fetchAttractions();
+      }, []);
+      
 
     const ratingCounts = {
         five: 0,
@@ -206,4 +233,5 @@ export default function AttractionDetail({}){
             
         </main>
     )
-}
+};
+export default AttractionDetail;

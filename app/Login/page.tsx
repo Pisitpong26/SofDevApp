@@ -13,10 +13,10 @@ const request = axios.create({
 
 type payload = {username:string,password:string}
 
-export const Login = (data:payload)=>
+const Login = (data:payload)=>
         	request.post("http://34.124.245.31:8000/login" , data)
 
-export const GetAllAttraction = ()=>
+const GetAllAttraction = ()=>
         	request.get("http://34.124.245.31:8000/attraction" )
 
 export default function UserLogin(){

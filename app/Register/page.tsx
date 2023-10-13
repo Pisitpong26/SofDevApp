@@ -12,7 +12,7 @@ const request = axios.create({
   
   type payload = {firstname:string,lastname:string,username:string,password:string}
   
-  export const Register = (data:payload)=>
+  const Register = (data:payload)=>
               request.post("http://34.124.245.31:8000/register" , data)
 
 export default function RegisterUser(){
